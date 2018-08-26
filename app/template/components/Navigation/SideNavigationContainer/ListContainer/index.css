@@ -1,0 +1,28 @@
+@import "../../../../styles/colors.css";
+@import "../../../../styles/layout.css";
+@import "../../../../styles/viewports.css";
+
+:root {
+  --nav-margin: 16px;
+}
+
+.container {
+  padding: 0 var(--nav-margin) var(--nav-margin) var(--nav-margin);
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 266px;
+}
+
+.container__noBackground {
+  background-color: transparent;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 375px) {
+  .container {
+    width: 320px;
+  }
+}

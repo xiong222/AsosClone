@@ -1,0 +1,50 @@
+@import "../../../styles/colors.css";
+@import "../../../styles/button.css";
+
+.label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: normal;
+  display: inline-block;
+  width: 75%;
+  line-height: 2;
+  vertical-align: middle;
+  letter-spacing: 0.4px;
+}
+
+.count {
+  float: right;
+  color: #999;
+  text-align: right;
+  display: inline-block;
+  width: 25%;
+  line-height: 2;
+  vertical-align: middle;
+}
+
+.bold {
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 0;
+
+  font: inherit;
+  text-align: left;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.button:active,
+.button:hover,
+.button:focus {
+  background-color: #ddd;
+  cursor: pointer;
+}

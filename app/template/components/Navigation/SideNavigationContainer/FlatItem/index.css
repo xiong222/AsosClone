@@ -1,0 +1,18 @@
+@import "../../../../styles/typography.css";
+@import "../../../../styles/viewports.css";
+@import "../../../../styles/colors.css";
+@import "../../../../styles/button.css";
+@import "../MenuItem/index.css";
+
+.flatMenuItem {
+  height: 39px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 375px) {
+  .flatMenuItem {
+    height: 48px;
+  }
+}

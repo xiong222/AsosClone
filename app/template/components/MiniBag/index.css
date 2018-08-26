@@ -1,0 +1,31 @@
+
+@import "../../styles/typography.css";
+@import "../../styles/colors.css";
+
+.notification span {
+  display: inline-block
+}
+
+.miniBag {
+  position: relative;
+}
+
+.miniBag .link {
+  @apply --small-font-size;
+
+  text-decoration: underline;
+  color: #2d2d2d;
+}
+
+.spinnerContainer {
+  display: flex;
+  height: 290px;
+}
+
+.error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}

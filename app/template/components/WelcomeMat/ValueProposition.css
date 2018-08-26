@@ -1,0 +1,49 @@
+@import "../../styles/colors.css";
+@import "../../styles/typography.css";
+@import "../../styles/viewports.css";
+
+.container {
+  padding: 8px 56px;
+}
+
+.header {
+  @apply --h5-text;
+
+  line-height: 1.67;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+    flex-basis: calc(30% - 1px);
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+.message {
+  @apply --standard-font-size;
+
+  font-family: futura-pt,sans-serif;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .message {
+    margin-left: 0;
+  }
+}

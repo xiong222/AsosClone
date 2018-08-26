@@ -1,0 +1,48 @@
+@import "../../../styles/colors.css";
+@import "../../../styles/icons.css";
+@import "../../../styles/typography.css";
+@import "../../../styles/viewports.css";
+
+.container {
+  @apply --word-wrap-break;
+
+  display: inline-block;
+  margin: 0 6px 8px;
+  width: 140px;
+}
+
+.wrapper {
+  width: 140px;
+  background-color: var(--white-three);
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 3px;
+  margin: 8px 0 4px;
+
+& .image {
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 97px;
+    width: 132px;
+  }
+}
+
+.name {
+  @apply --small-font-size;
+
+  line-height: 1.33;
+  letter-spacing: 1px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.optedOut {
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 4px;
+  }
+}

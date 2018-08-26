@@ -1,0 +1,60 @@
+@import "../../styles/colors.css";
+@import "../../styles/typography.css";
+@import "../../styles/viewports.css";
+@import "../../styles/layout.css";
+
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  display: none;
+}
+
+.list {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 32px;
+  font-size: 0;
+}
+
+.container a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.container li {
+  font-size: .875rem;
+  display: inline-block;
+  letter-spacing: .4px;
+
+  display: inline-block;
+  letter-spacing: 0.4px;
+}
+
+.container li:not(:first-child)::before {
+  content: "›";
+  display: inline-block;
+  padding: 0 14px;
+}
+
+.container li:last-child,
+.container li:last-child a {
+  color: #999;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1366px;
+    display: block;
+  }
+
+  .list {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .list {
+    padding: 0 32px;
+  }
+}

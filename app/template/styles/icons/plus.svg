@@ -1,0 +1,13 @@
+<svg width="10px" height="10px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-332.000000, -338.000000)" fill="#2D2D2D">
+      <g transform="translate(-1.000000, 0.000000)">
+        <g transform="translate(0.000000, 72.000000)">
+          <g transform="translate(0.000000, 220.000000)">
+            <path d="M338.625,50.375 L338.625,46 L337.375,46 L337.375,50.375 L333,50.375 L333,51.625 L337.375,51.625 L337.375,56 L338.625,56 L338.625,51.625 L343,51.625 L343,50.375 L338.625,50.375 Z"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

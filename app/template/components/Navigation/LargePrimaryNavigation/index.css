@@ -1,0 +1,89 @@
+@import "../../../styles/colors.css";
+@import "../../../styles/typography.css";
+@import "../../../styles/viewports.css";
+@import "../../../styles/layout.css";
+@import "../../../styles/accessibility.css";
+@import "../../../styles/global.css";
+
+
+.container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background-color: #525050;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .container__hidden,
+  .container.container__hidden[aria-hidden="false"] {
+    display: none;
+  }
+
+  .navigation {
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 32px;
+    box-sizing: border-box;
+  }
+
+  .navButtons {
+    height: 50px;
+  }
+
+  .navButton {
+    font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+
+    color: #fff;
+    letter-spacing: 0.8px;
+    line-height: 50px;
+    border: none;
+    padding: 0 10px;
+    background-color: #525050;
+    margin: 0;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .navButton:focus {
+    outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+  }
+
+  .navButton:hover,
+  .navButton__active {
+    color: #2d2d2d;
+    background-color: #eee;
+    font-weight: 400;
+  }
+
+  .navButton:hover .slant,
+  .navButton__active .slant {
+    color: #2d2d2d;
+    background-color: transparent;
+    padding: 0 13px;
+  }
+
+  .slant:focus {
+    outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+  }
+
+  .slant {
+    display: block;
+    padding: 0 12px 0 14px;
+    font-weight: 800;
+    background-color: var(--red);
+    transform: skew(-12deg);
+  }
+
+  .slant span {
+    display: block;
+    transform: skew(12deg);
+  }
+
+  .bold {
+    font-weight: 800;
+  }
+}

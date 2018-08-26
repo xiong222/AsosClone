@@ -1,0 +1,10 @@
+@import "../../styles/colors.css";
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: currentcolor;
+  font-size: 0;
+  line-height: 0;
+}
+

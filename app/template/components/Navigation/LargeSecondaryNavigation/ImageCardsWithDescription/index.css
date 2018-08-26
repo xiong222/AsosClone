@@ -1,0 +1,105 @@
+@import "../../../../styles/colors.css";
+@import "../../../../styles/typography.css";
+@import "../../../../styles/accessibility.css";
+@import "../../../../styles/layout.css";
+
+:root {
+  --description-height: 70px;
+  --thumbnail-aspect-ratio: 50%;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  flex-basis: calc(25% - 15px);
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.thumbnailWrapper {
+  position: relative;
+}
+
+.thumbnailCover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+&.light {
+   background-image: linear-gradient(
+     to bottom,
+     rgba(255,255,255,0),
+     rgba(45, 45, 45, 0.65)
+   );
+ }
+
+&.dark {
+   background-image: linear-gradient(
+     to bottom,
+     rgba(255,255,255,0),
+     rgba(248, 248, 248, 0.75)
+   );
+ }
+}
+
+.image {
+  background-position: 0 0;
+  background-size: contain;
+  width: 100%;
+  padding-top: var(--thumbnail-aspect-ratio);
+}
+
+.cardTitle {
+  @apply --large-font-size;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.22;
+  letter-spacing: 2.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle.light {
+  color: var(--white-three);
+}
+
+.cardTitle.dark {
+  color: #2d2d2d;
+}
+
+.cardDescription {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  background: var(--white-three);
+  line-height: 1.57;
+  letter-spacing: 0.4px;
+  color: #2d2d2d;
+  padding: 10px 16px 16px;
+  max-height: var(--description-height);
+  overflow: hidden;
+}
+
+.cardDescription:hover {
+  @apply --link-hover;
+}
+
+.cardDescription:focus {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}

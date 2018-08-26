@@ -1,0 +1,12 @@
+
+.container {
+  height: 100%;
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: none;
+  }
+}
+

@@ -1,0 +1,149 @@
+@import "../../../styles/colors.css";
+@import "../../../styles/typography.css";
+@import "../../../styles/accessibility.css";
+@import "../../../styles/layout.css";
+@import "../../../styles/zindex.css";
+
+.container {
+  width: 100%;
+  height: calc(100% - 150px);
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(45,45,45,.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--navigation-backdrop-z-index);
+}
+
+.flyoutContainer {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0 32px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.flyout {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 10px;
+  background-color: #eee;
+  position: relative;
+  z-index: 12000;
+  transition: min-height 200ms ease-in-out;
+  min-height: 0;
+}
+
+.isLoading {
+  min-height: 450px;
+}
+
+.visible {
+  display: block;
+}
+
+.column {
+  box-sizing: border-box;
+  padding: 0 20px;
+  border-right: 1px #ddd solid;
+}
+
+.column:last-child {
+  border-right: 0;
+}
+
+.colspan-1 {
+  flex: 1;
+}
+
+.colspan-1 .textList {
+  width: 100%;
+}
+
+.colspan-2 {
+  flex: 2;
+}
+
+.colspan-2 .textList {
+  width: 50%;
+}
+
+.colspan-3 {
+  flex: 3;
+}
+
+.colspan-3 .textList {
+  width: 33%;
+}
+
+.colspan-4 {
+  flex: 4;
+}
+
+.colspan-4 .textList {
+  width: 25%;
+}
+
+.columnHeaderContain {
+  display: block;
+}
+
+.columnHeader {
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  display: inline-block;
+  border-bottom: 1px solid #2d2d2d;
+  padding-bottom: 5.5px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.textList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 190px;
+}
+
+.textLink {
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  letter-spacing: .4px;
+  line-height: 2.14;
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+}
+
+.textLink__sale {
+  color: var(--red);
+}
+
+.textLink__bold {
+  font-weight: 800;
+}
+
+.textLink:hover {
+  color: #0770cf;
+}
+
+.textLink:focus {
+  @apply --link-hover;
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}

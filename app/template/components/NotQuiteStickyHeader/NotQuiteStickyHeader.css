@@ -1,0 +1,29 @@
+@import "../../styles/headroom.css";
+
+.stickyHeader :global(.headroom) {
+  @apply --headroom;
+}
+
+:global(.chrome-bodylock) .stickyHeader :global(.headroom) {
+  z-index: 0;
+}
+
+.stickyHeader :global(.headroom--unfixed) {
+  @apply --headroom--unfixed;
+}
+
+.stickyHeader :global(.headroom--pinned) {
+  @apply --headroom--pinned;
+}
+
+.stickyHeader :global(.headroom--scrolled) {
+  @apply --headroom--scrolled;
+}
+
+:global(.chrome-hide-overflow) .stickyHeader :global(.headroom--unpinned) {
+  @apply --headroom--pinned;
+}
+
+.stickyHeader__sidePanelOpen :global(.headroom) {
+  @apply --headroom--pinned;
+}

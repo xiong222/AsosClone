@@ -1,0 +1,25 @@
+:root {
+  --headroom: {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9501;
+  }
+
+  --headroom--pinned: {
+    top: 0 !important;
+    position: fixed;
+  }
+
+  --headroom--unfixed: {
+    position: relative;
+  }
+
+  --headroom--scrolled: {
+    top: -112px;
+    left: 0;
+    right: 0;
+    position: fixed;
+  }
+}
+

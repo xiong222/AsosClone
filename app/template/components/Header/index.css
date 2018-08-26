@@ -1,0 +1,38 @@
+@import "../../styles/typography.css";
+@import "../../styles/colors.css";
+@import "../../styles/viewports.css";
+@import "../../styles/layout.css";
+@import "../../styles/global.css";
+
+.container {
+  background-color: #2d2d2d;
+  height: 50px;
+  width: 100%;
+}
+
+.body {
+  font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+
+  color: #666;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body {
+    width: 100%;
+    max-width: 1366px;
+    padding: 0 32px;
+    box-sizing: border-box;
+  }
+}

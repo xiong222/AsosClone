@@ -1,0 +1,76 @@
+@import "../../styles/typography.css";
+@import "../../styles/colors.css";
+@import "../../styles/accessibility.css";
+@import "../../styles/viewports.css";
+@import "../../styles/layout.css";
+@import "../../styles/global.css";
+
+:root {
+  --navigation-border: 1px #ddd solid;
+}
+
+.container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+
+    color: #666;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: block;
+  }
+
+  .container__hidden {
+    display: none;
+  }
+
+  .body {
+    height: 30px;
+    margin: 0 auto;
+  }
+
+  .navigation {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+    height: 100%;
+  }
+
+  .navigation li {
+    display: inline-block;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    vertical-align: middle;
+  }
+
+  .navigation li:last-of-type {
+    border-right: 1px solid #ddd;
+  }
+
+  .navigation a {
+    display: block;
+    color: #666;
+    padding: 0 19px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+
+  .navigation a:hover,
+  .navigation a:focus {
+    color: #2a52be;
+  }
+
+  .navigation a:focus {
+    outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+  }
+
+  .body {
+    max-width: 1366px;
+    box-sizing: border-box;
+    padding: 0 32px;
+  }
+}

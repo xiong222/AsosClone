@@ -1,0 +1,39 @@
+@import "../../../styles/colors.css";
+@import "../../../styles/typography.css";
+
+:root {
+  --inactive: {
+    display: block;
+    font-size: 12px;
+    line-height: 1em;
+    color: #999;
+    text-decoration: line-through;
+  }
+}
+
+.container {
+  font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+
+  display: inline-block;
+}
+
+.current {
+  display: block;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+  color: #2d2d2d;
+}
+
+.highlight {
+  color: var(--lipstick);
+}
+
+.previous,
+.rrp {
+  @apply --inactive;
+}
+
+.rrpLabel::after {
+  content: " ";
+}

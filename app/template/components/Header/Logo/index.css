@@ -1,0 +1,20 @@
+@import "../../../styles/viewports.css";
+
+.logo {
+  width: 80px;
+  height: 24px;
+  display: block;
+  fill: #fff;
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.95;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 104px;
+    height: 30px;
+  }
+}

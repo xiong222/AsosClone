@@ -1,0 +1,45 @@
+@import "../../styles/colors.css";
+@import "../../styles/typography.css";
+@import "../../styles/accessibility.css";
+@import "../../styles/viewports.css";
+@import "../../styles/icons.css";
+@import "../../styles/layout.css";
+
+.container__hidden {
+  display: none;
+}
+
+.group {
+  padding-left: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-color: #eee;
+  }
+
+  .body {
+    padding: 30px 32px 0;
+  }
+
+  .group {
+    padding-left: 0;
+    border-top: solid 1px #ddd;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body {
+    max-width: 1366px;
+    padding: 32px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .group {
+    border-top: none;
+    margin-left: 18px;
+    flex: 1;
+  }
+}

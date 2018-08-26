@@ -1,0 +1,86 @@
+@import "../../../../styles/typography.css";
+@import "../../../../styles/viewports.css";
+@import "../../../../styles/colors.css";
+@import "../../../../styles/button.css";
+
+:root {
+  --circle-image-size-small: 62px;
+  --circle-image-size-medium: 80px;
+}
+
+.container {
+  display: block;
+  margin-bottom: 16px;
+  height: 78px;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+}
+
+.menuItem {
+  @apply --h4-text;
+
+  color: #2d2d2d;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  padding: 0 12px;
+  background-color: #eee;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.menuItem:hover {
+  opacity: 0.7;
+}
+
+.label {
+  @apply --small-font-size;
+
+  width: 140px;
+  text-align: left;
+  align-self: center;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.label__sale {
+  color: var(--red);
+}
+
+.image {
+  background-position: 0 0;
+  background-size: var(--circle-image-size-small);
+  width: var(--circle-image-size-small);
+  height: var(--circle-image-size-small);
+  border-radius: 50%;
+  align-self: center;
+  flex-grow: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 96px;
+  }
+
+  .menuItem {
+    @apply --h3-text;
+  }
+
+  .label {
+    width: 180px;
+  }
+
+  .image {
+    background-size: var(--circle-image-size-medium);
+    width: var(--circle-image-size-medium);
+    height: var(--circle-image-size-medium);
+  }
+}
+
+@media (min-width: 768px) {
+  .label {
+    @apply --standard-font-size;
+  }
+}

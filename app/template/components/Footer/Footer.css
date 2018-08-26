@@ -1,0 +1,46 @@
+@import "../../styles/colors.css";
+@import "../../styles/layout.css";
+@import "../../styles/viewports.css";
+
+.container {
+  display: block;
+  clear: both;
+}
+
+.mainContent {
+  display: none;
+}
+
+.container__accordion .mainContent {
+  display: block;
+}
+
+.iconBar {
+  border-top: 1px solid #eee;
+  width: 100%;
+  background: var(--white-three);
+  text-align: center;
+}
+
+.greeterWrapper {
+  background-color: #eee;
+  padding: 17px 0;
+}
+
+.myAccountLinksWrapper {
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+  .greeterWrapper {
+    display: none;
+  }
+
+  .container__accordion {
+    display: none;
+  }
+
+  .mainContent {
+    display: block;
+  }
+}

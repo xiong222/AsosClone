@@ -1,0 +1,30 @@
+@import "../../styles/colors.css";
+@import "../../styles/zindex.css";
+
+.fade {
+  position: absolute; /* HACK: iOS 10 and below do not like fixed with forms */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 19000;
+  will-change: opacity;
+}
+
+.fade__entered {
+  opacity: 0.01;
+}
+
+.fade__entering {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.fade__exited {
+  opacity: 1;
+}
+
+.fade__exiting {
+  opacity: 0.01;
+  transition: opacity 0.3s ease-in;
+}
+

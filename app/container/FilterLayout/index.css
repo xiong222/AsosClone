@@ -1,0 +1,91 @@
+
+:root {
+  --anim-in-duration: 0.225s;
+  --anim-out-duration: 0.195s;
+  --header-height: 46px;
+}
+
+.container {
+  height: 100%;
+}
+
+.grayTapArea {
+  opacity: 0;
+  z-index: var(--zindex-xxsmall);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+
+  /* remove blink when tapping in iOS */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: opacity var(--anim-out-duration), transform 0s var(--anim-out-duration);
+}
+
+.filterContainer {
+  background-color: var(--white);
+  outline-width: 0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: calc(100% - 50px);
+  height: 100%;
+  transition: transform var(--anim-out-duration);
+  z-index: var(--zindex-xlarge);
+}
+
+.filterLayout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--zindex-xlarge);
+
+  /* ie10 sadly doesn't support pointer-events, so we are using scale to workaround it  */
+  transform: scale(0);
+  transition: transform 0s var(--anim-out-duration);
+}
+
+.showOnMobile {
+  /*
+  * translateZ force iOS to render element
+  * https://stackoverflow.com/questions/11597391/webkit-overflow-scrolling-causing-divs-not-to-show
+  */
+  transform: scale(1) translateZ(0);
+  transition: transform 0s;
+}
+
+.showOnMobile .grayTapArea {
+  opacity: 0.5;
+  transition: opacity var(--anim-in-duration), transform 0s;
+}
+
+.showOnMobile .filterContainer {
+  transform: translateX(-100%);
+  transition: transform var(--anim-in-duration);
+}
+
+@media (--medium-viewport) {
+  .filterButton,
+  .filterContainer {
+    display: none;
+  }
+
+  .hideOnMobile {
+    transition: none;
+  }
+}
+
+/* stylelint-disable-next-line */
+@media (prefers-reduced-motion) {
+  .filterLayout,
+  .showOnMobile,
+  .showOnMobile .grayTapArea,
+  .showOnMobile .filterContainer {
+    transition: none;
+  }
+}

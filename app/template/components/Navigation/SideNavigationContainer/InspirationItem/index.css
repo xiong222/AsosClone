@@ -1,0 +1,81 @@
+@import "../../../../styles/viewports.css";
+@import "../../../../styles/accessibility.css";
+@import "../../../../styles/typography.css";
+@import "../../../../styles/colors.css";
+
+:root {
+  --inspitation-image-width: 100%;
+  --inspitation-image-height: 100%;
+}
+
+.card {
+  display: inline-block;
+  width: 234px;
+  margin-bottom: 16px;
+  font-size: 0;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.card:last-child {
+  margin: 0;
+}
+
+.card:focus {
+  outline: none;
+  border: 1px solid #2a52be;
+}
+
+.wrapper {
+  height: 115px;
+  position: relative;
+}
+
+.image {
+  background-position: 0 0;
+  background-size: var(--inspitation-image-width) var(--inspitation-image-height);
+  width: var(--inspitation-image-width);
+  height: var(--inspitation-image-height);
+}
+
+.title {
+  @apply --large-font-size;
+
+  letter-spacing: 2.5px;
+  font-weight: 900;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+}
+
+.description {
+  @apply --standard-font-size;
+
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  height: 70px;
+  padding: 14px;
+  box-sizing: border-box;
+  background-color: var(--white-three);
+  color: #2d2d2d;
+}
+
+.dark {
+  color: #2d2d2d;
+}
+
+.light {
+  color: var(--white-three);
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 288px;
+  }
+
+  .wrapper {
+    height: 141px;
+  }
+}

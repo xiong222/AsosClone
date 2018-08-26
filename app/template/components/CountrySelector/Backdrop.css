@@ -1,0 +1,14 @@
+@import "../../styles/colors.css";
+@import "../../styles/zindex.css";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 19000;
+  background-color: rgba(45,45,45,.65);
+  will-change: opacity;
+}
+

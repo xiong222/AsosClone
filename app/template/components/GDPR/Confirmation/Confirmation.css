@@ -1,0 +1,49 @@
+@import "../../../styles/typography.css";
+@import "../../../styles/icons.css";
+@import "../../../styles/viewports.css";
+
+.container {
+  background-color: transparent;
+  background-image: svg-inline(emoji-content);
+  background-repeat: no-repeat;
+  background-position: center 48px;
+  padding-top: 160px;
+  text-align: center;
+}
+
+.container__isIn {
+  background-image: svg-inline(emoji-happy);
+}
+
+.heading {
+  @apply --h3-text;
+
+  margin: 0 16px 8px;
+}
+
+.body {
+  margin: 0 16px 24px;
+}
+
+.actions {
+  margin: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+& > *:not(:last-child) {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+
+& > *:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+}
+}

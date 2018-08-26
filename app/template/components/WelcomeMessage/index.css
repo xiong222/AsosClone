@@ -1,0 +1,78 @@
+@import "../../styles/viewports.css";
+@import "../../styles/colors.css";
+
+.container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9500;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  line-height: 24px;
+  height: 100%;
+  animation: slideUp 300ms ease-in forwards 1s;
+  letter-spacing: 0.4px;
+}
+
+@keyframes slideUp {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.flag {
+  width: 23px;
+  height: 23px;
+  margin: 6px 16px 0 0;
+}
+
+.text {
+  color: #2d2d2d;
+  margin-right: 0.5em;
+}
+
+.redirectLink {
+  margin-right: 16px;
+  color: #2d2d2d;
+}
+
+.closeButton svg {
+  height: 16px;
+  width: 16px;
+}
+
+.closeButton:hover svg {
+  fill: #2a52be;
+}
+
+.closeButton {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  background: none;
+  border: 0;
+}
+
+@media (min-width: 375px) {
+  .wrapper {
+    padding: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .closeButton svg {
+    height: 20px;
+    width: 20px;
+  }
+}

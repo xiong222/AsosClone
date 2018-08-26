@@ -1,0 +1,8 @@
+@import "./colors.css";
+
+:root {
+  --asos-focus: {
+    outline: none;
+    box-shadow: inset 0 0 3px 1px var(--cerulean);
+  };
+}

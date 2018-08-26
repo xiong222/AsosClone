@@ -1,0 +1,48 @@
+@import "../../styles/viewports.css";
+
+.wrapper {
+  padding: 0 1em 1em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+
+.paymentOption {
+  margin: 0 0.5em 0.5em 0;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 0 1.5em;
+    flex-basis: calc(30% - 1px);
+    justify-content: center;
+  }
+
+  .container {
+    margin-left: 0;
+    max-width: 200px;
+  }
+
+  .paymentOption {
+    margin: 0.25em 0.5em 0.25em 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 0 2em;
+  }
+}
+
+.logo {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}

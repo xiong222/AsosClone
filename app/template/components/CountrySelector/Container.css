@@ -1,0 +1,57 @@
+@import "../../styles/colors.css";
+@import "../../styles/viewports.css";
+@import "../../styles/zindex.css";
+
+.wrapper {
+  position: relative;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  z-index: 19001;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 356px;
+  min-height: 456px;
+  padding: 16px;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex: auto;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .container {
+    width: 356px;
+    height: 456px;
+  }
+
+  .container__notLoading {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 30px;
+    padding-top: 25px;
+  }
+}
+
+.container__withError {
+  min-height: 466px;
+}
+
+@media (min-width: 375px) {
+  .container__withError {
+    min-height: 456px;
+  }
+}

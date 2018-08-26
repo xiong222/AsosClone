@@ -1,0 +1,97 @@
+@import "../../styles/viewports.css";
+@import "../../styles/colors.css";
+@import "../../styles/typography.css";
+@import "../../styles/accessibility.css";
+
+.container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9500;
+}
+
+.containerWrapper {
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 300ms ease-in forwards 1s;
+}
+
+@keyframes slideUp {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.titleBarWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+  border-top: 1px solid #999;
+}
+
+.contentBarWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.titleBar {
+  display: flex;
+  flex: auto 1 1;
+  justify-content: space-between;
+  max-width: 1024px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 16px;
+}
+
+.title {
+  @apply --h5-text;
+
+  color: #999;
+}
+
+.closeButton {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.closeButton span {
+  @apply --standard-font-size;
+}
+
+.closeButton:hover {
+  color: #2a52be;
+}
+
+.closeButton:focus {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.contentBar {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  max-width: 1024px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contentBar {
+    flex-direction: row;
+    padding: 23px 16px 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contentBar {
+    padding: 20px 32px;
+  }
+}

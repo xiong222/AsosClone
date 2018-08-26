@@ -1,0 +1,113 @@
+@import "../../styles/typography.css";
+@import "../../styles/colors.css";
+@import "../../styles/viewports.css";
+@import "../../styles/accessibility.css";
+
+.container {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid color(#2d2d2d a(10%));
+  box-sizing: border-box;
+}
+
+.container__large {
+  display: none;
+}
+
+.container li {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+.container li:not(:last-of-type)::after {
+  content: "";
+  top: 50%;
+  right: 0;
+  margin-top: -10px;
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: color(#2d2d2d a(10%));
+}
+
+.button {
+  font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+
+  height: 49px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #999;
+  letter-spacing: 2px;
+  font-weight: 900;
+  background-color: #fff;
+  border-style: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 50px;
+  box-sizing: border-box;
+}
+
+.button:focus {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.button.selected {
+  color: #2d2d2d;
+  border-bottom: 2px solid #2d2d2d;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: 100%;
+    padding: 0;
+    width: 230px;
+    border-bottom: none;
+  }
+
+  .container__large {
+    display: inline-block;
+  }
+
+  .container li {
+    width: 115px;
+    border-right: 1px solid #525050;
+    border-bottom: none;
+    box-sizing: border-box;
+  }
+
+  .container li:first-of-type {
+    border-left: 1px solid #525050;
+  }
+
+  .button {
+    height: 100%;
+    line-height: 60px;
+    width: 100%;
+    color: #fff;
+    background-color: #2d2d2d;
+    border-bottom: none;
+  }
+
+  .button.selected,
+  .button.selected:focus,
+  .button.selected:hover {
+    color: #fff;
+    background-color: #525050;
+    border-bottom: none;
+    height: 100%;
+  }
+
+  .button:focus,
+  .button:hover {
+    color: #fff;
+    background-color: #474747;
+  }
+}
+

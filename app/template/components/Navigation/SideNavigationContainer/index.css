@@ -1,0 +1,20 @@
+@import "../../../styles/typography.css";
+
+:root {
+  --nav-margin: 16px;
+}
+
+.title {
+  @apply --h3-text;
+
+  padding: calc(2 * var(--nav-margin)) var(--nav-margin) var(--nav-margin);
+  border-bottom: var(--nav-margin) solid #fff;
+}
+
+.listContainer:first-child {
+  border-top: var(--nav-margin) solid #fff;
+}
+
+.listContainer:last-child {
+  margin-bottom: var(--nav-margin);
+}

@@ -1,0 +1,22 @@
+:global {
+& .chrome-bodylock {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+& .chrome-hide-overflow {
+    overflow: hidden;
+  }
+}
+
+:root {
+  --miscbar--height: 30px;
+  --header-height: 50px;
+  --header-height-medium: 60px;
+  --navigation-header-height: 50px;
+  --largest-header-height: calc(var(--miscbar--height) + var(--header-height-medium) + var(--navigation-header-height));
+}

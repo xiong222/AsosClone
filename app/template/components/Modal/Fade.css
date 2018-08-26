@@ -1,0 +1,52 @@
+@import "../../styles/colors.css";
+@import "../../styles/viewports.css";
+@import "../../styles/zindex.css";
+
+.fade {
+  width: 100%;
+  height: calc(100vh - 50px);
+  z-index: 19000;
+  will-change: opacity;
+
+/* WD-6146 - 100vh calculation on android includes chrome header (55px) */
+&.isAndroid {
+   height: calc(100vh - 105px);
+ }
+
+/* WD-6401- 100vh content covered by bottom nav bar */
+&.isIos {
+   height: calc(100vh - 125px);
+
+@media (--iphone-x-viewport) {
+  height: calc(100vh - 163px);
+}
+}
+}
+
+.fade__entered {
+  opacity: 0.01;
+}
+
+.fade__entering {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.fade__exited {
+  opacity: 1;
+}
+
+.fade__exiting {
+  opacity: 0.01;
+  transition: opacity 0.3s ease-in;
+}
+
+@media (min-width: 768px) {
+  .fade {
+    position: absolute; /* HACK: iOS 10 and below do not like fixed with forms */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 19000;
+  }
+}

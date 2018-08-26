@@ -1,0 +1,9 @@
+@import "../../../styles/typography.css";
+
+.minibagFooter {
+  @apply --standard-font-size;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

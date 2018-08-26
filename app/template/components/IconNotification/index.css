@@ -1,0 +1,24 @@
+@import "../../styles/colors.css";
+@import "../../styles/viewports.css";
+
+.notification {
+  background: var(--bright-red);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  height: 16px;
+  line-height: 16px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 8px;
+  width: 16px;
+}
+
+@media (min-width: 768px) {
+  .notification {
+    right: 10px;
+    top: 13px;
+  }
+}

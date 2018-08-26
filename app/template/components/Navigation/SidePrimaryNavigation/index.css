@@ -1,0 +1,16 @@
+@import "../../../styles/viewports.css";
+
+.container {
+  visibility: visible;
+}
+
+.container[aria-hidden="true"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: none;
+  }
+}

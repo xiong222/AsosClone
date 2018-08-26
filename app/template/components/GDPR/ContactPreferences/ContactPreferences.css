@@ -1,0 +1,125 @@
+@import "../../../styles/icons.css";
+@import "../../../styles/button.css";
+@import "../../../styles/colors.css";
+@import "../../../styles/typography.css";
+@import "../../../styles/viewports.css";
+@import "../../../styles/layout.css";
+
+:root {
+  --icon-height: 18px;
+}
+
+.container {
+  /* zotiger background-image: url(./clock.gif); */
+  background-position: 50% 15px;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  padding-top: 59px;
+  text-align: center;
+}
+
+.header {
+  @apply --h3-text;
+
+  line-height: 1.31;
+  margin: 8px 0;
+}
+
+.body {
+  font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+  @apply --standard-font-size;
+
+  line-height: 1.31;
+  margin: 0 auto 16px;
+}
+
+.footer {
+  font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+  @apply --standard-font-size;
+
+  margin: 0 auto;
+
+& a:link, & a:visited {
+              @apply --link;
+
+              color: #2d2d2d;
+              text-decoration: underline;
+            }
+
+& a:hover {
+    @apply --link-hover;
+  }
+}
+
+.small {
+  @apply --small-text;
+
+  margin-bottom: 16px;
+}
+
+.optionListWrapper {
+  margin: 0 -16px;
+}
+
+.optionList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 38px;
+  max-width: 400px;
+}
+
+.cta {
+  margin: 0 auto 32px;
+  max-width: 288px;
+
+& > * {
+    margin-bottom: 16px;
+  }
+}
+
+.errorWrapper {
+  padding-bottom: 32px;
+  margin: 0 -16px;
+}
+
+.errorMessage {
+  background-color: var(--red-light);
+  padding: 16px;
+  display: flex;
+  text-align: left;
+
+&::before {
+   background-image: svg-inline(alert);
+   background-repeat: no-repeat;
+   background-size: var(--icon-height);
+   content: '';
+   display: inline-block;
+   height: var(--icon-height);
+   margin-right: 12px;
+   margin-top: -2px;
+   width: 32px;
+ }
+}
+
+@media (min-width: 375px) {
+  .errorMessage {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .body {
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  .optionList {
+    max-width: initial;
+  }
+
+  .errorWrapper {
+    padding-bottom: 32px;
+    margin: 0 -30px;
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../styles/colors.css";
+@import "../../styles/icons.css";
+
+:root {
+  --icon-vertical-position: 1em;
+  --icon-width: 1.25em;
+  --gap-between-icon-and-text: 0.75em;
+}
+
+.notification {
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  padding: 0;
+}
+
+.text {
+  flex-grow: 1;
+  font-size: 0.875rem;
+  letter-spacing: 0.4px;
+  text-align: left;
+  line-height: 1.57;
+}
+
+.hasBackground {
+  background-color: var(--gray-10);
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  color: #2d2d2d;
+  align-items: center;
+}
+
+.notification.hasBackground {
+  background-position: left 0.75em center;
+}
+
+.hasIcon.success {
+  background-image: svg-inline(notification-check-green);
+}
+
+.success.hasBackground {
+  background-color: var(--light-green);
+}
+
+.hasIcon.error {
+  background-image: svg-inline(notification-exclamation);
+}
+
+.error.hasBackground {
+  background-color: var(--light-red);
+}
+
+.hasIcon.promotion {
+  background-image: svg-inline(notification-exclamation);
+}
+
+.promotion.hasBackground {
+  background-color: var(--light-blue);
+}
+
+.hasIcon.alert {
+  background-image: svg-inline(notification-exclamation-orange);
+}
+
+.alert.hasBackground {
+  background-color: var(--amber-light);
+}
+
+.hasIcon {
+  padding-left: 2em;
+  position: relative;
+  text-align: left;
+}
+
+.hasIcon.hasBackground {
+  padding-left: calc(
+    1em + var(--icon-width) + var(--gap-between-icon-and-text)
+  );
+}

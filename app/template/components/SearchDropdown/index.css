@@ -1,0 +1,47 @@
+@import "../../styles/colors.css";
+@import "../../styles/button.css";
+@import "../../styles/typography.css";
+
+:root {
+  --recent-searches-common: {
+    @apply --smallest-font-size;
+
+    font: inherit;
+    font-weight: 600;
+    padding: 0 16px;
+    margin: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 32px;
+  }
+}
+
+.container {
+  color: #2d2d2d;
+}
+
+.list {
+  @apply --standard-font-size;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.recentSearchesHeader {
+  @apply --recent-searches-common;
+
+  color: #999;
+  letter-spacing: 1.7px;
+}
+
+.recentSearchesClear {
+  @apply --reset-button;
+  @apply --recent-searches-common;
+
+  color: #2d2d2d;
+  letter-spacing: 1.7px;
+  float: right;
+}

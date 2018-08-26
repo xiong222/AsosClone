@@ -1,0 +1,145 @@
+@import "../../../styles/colors.css";
+@import "../../../styles/icons.css";
+@import "../../../styles/viewports.css";
+@import "../../../styles/accessibility.css";
+@import "../../../styles/layout.css";
+@import "../../../styles/zindex.css";
+
+.dialog {
+  height: 100%;
+  transform: translateX(-316px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20000;
+  background-color: #fff;
+}
+
+.dialog__animate,
+.primarySideContainer__animate {
+  transition: transform 0.25s ease-out;
+}
+
+.dialog__visible {
+  transform: translateX(0);
+}
+
+.dontHideButtonContainer {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 266px;
+  background-color: #eee;
+}
+
+.primarySideContainer {
+  height: calc(100% - 50px);
+  transform: translateX(0);
+}
+
+.primarySideContainer__hidden {
+  transform: translateX(-100%);
+}
+
+.content {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.close {
+  position: absolute;
+  padding: 0 13px;
+  box-sizing: content-box;
+  top: 0;
+  left: 266px;
+  height: 50px;
+  width: 24px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' height='24' width='24' fill='%23fff'%3E%3Cpath d='M9.97 8.274L2.335.637.637 2.334 8.274 9.97.637 17.607l1.697 1.697 7.637-7.636 7.636 7.636 1.697-1.697-7.636-7.636 7.636-7.637L17.607.637 9.971 8.274z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-color: #2d2d2d;
+  background-size: 24px;
+  background-position: 50%;
+  cursor: pointer;
+  border: 0;
+}
+
+.close:focus {
+  outline: none;
+  box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.overlay {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 19000;
+  opacity: 0;
+  background-color: rgba(45,45,45,.65);
+  right: 0;
+}
+
+.overlay__animate {
+  transition: opacity 0.25s ease-in;
+}
+
+.overlay__show {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 375px) {
+  .dialog {
+    transform: translateX(-370px);
+  }
+
+  .dialog__visible {
+    transform: translateX(0);
+  }
+
+  .close {
+    left: 320px;
+  }
+
+  .container {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .dialog {
+    top: 60px;
+    transform: translateX(-320px);
+  }
+
+  .dialog__visible {
+    transform: translateX(0);
+  }
+
+  .container {
+    width: 320px;
+    height: calc(100% - 60px);
+  }
+
+  .close {
+    height: 60px;
+    width: 40px;
+    left: 0;
+    top: -60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dialog,
+  .dialog__visible {
+    display: none;
+  }
+}

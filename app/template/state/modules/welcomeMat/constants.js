@@ -1,0 +1,3 @@
+export const RECEIVE_WELCOME_MAT = "RECEIVE_WELCOME_MAT";
+
+

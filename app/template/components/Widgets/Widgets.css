@@ -1,0 +1,60 @@
+@import "../../styles/viewports.css";
+@import "../../styles/colors.css";
+
+.container {
+  padding: 0;
+  margin: 0;
+  align-self: flex-end;
+
+  /* IE 9 hack */
+  float: right \9;
+}
+
+.widgetButton {
+  position: relative;
+  padding: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.noOfBagItems {
+  font-size: 0.625rem;
+  font-weight: 900;
+  line-height: 0.625rem;
+  position: absolute;
+  color: #2d2d2d;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -2px;
+}
+
+:global(.bounce-enter.bounce-enter-active) {
+  animation-name: bounce-minibag;
+  animation-duration: 1s;
+}
+
+@keyframes bounce-minibag {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-8px);
+  }
+
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+@media (min-width: 768px) {
+  .widgetButton {
+    padding: 20px 15px;
+  }
+}

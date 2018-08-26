@@ -1,0 +1,189 @@
+@import "../../styles/typography.css";
+@import "../../styles/colors.css";
+@import "../../styles/viewports.css";
+@import "../../styles/icons.css";
+@import "../../styles/accessibility.css";
+@import "../../styles/zindex.css";
+
+.searchContainer {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.backdrop {
+  background-color: rgba(45,45,45,.65);
+  position: fixed;
+  top: -40px;
+  left: 0;
+  right: 0;
+  height: calc(100vh + 40px);
+  z-index: 19000;
+  display: none;
+}
+
+@supports (pointer-events: none) {
+  .backdrop {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.backdrop__active {
+  display: block;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.controls {
+  display: block;
+  box-sizing: border-box;
+  height: 64px;
+  margin: 0 -3px;
+  padding: 10px 0;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.container {
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  padding: 0 16px;
+  box-sizing: border-box;
+  z-index: 20000;
+  overflow-y: auto;
+  display: none;
+}
+
+.container__active {
+  display: block;
+}
+
+.fieldContainer {
+  position: relative;
+  background: #666;
+  border-radius: 19px/50%;
+  top: 42px;
+}
+
+.field {
+  font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+  @apply --standard-font-size;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0;
+  height: 38px;
+  border-radius: 19px/50%;
+  padding-left: 16px;
+  padding-right: 46px;
+  box-sizing: border-box;
+  color: #2d2d2d;
+  -webkit-appearance: none;
+}
+
+.field__active {
+  z-index: 22000;
+}
+
+.field::-webkit-search-decoration,
+.field::-webkit-search-results-button,
+.field::-webkit-search-results-decoration {
+  display: none;
+}
+
+.field:focus {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.button {
+  background-color: transparent;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: background-color 0.3s;
+  z-index: 22000;
+  color: #2d2d2d;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+.button:focus {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.button__active {
+  color: #fff;
+  background-color: #2a52be;
+}
+
+.results {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 38px;
+  padding: 16px 0;
+  z-index: 21000;
+  overflow-y: auto;
+}
+
+.label {
+  @apply --sr-only;
+}
+
+@media (min-width: 768px) {
+  .backdrop {
+    transition: opacity 0.3s ease-in;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .container {
+    position: static;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    overflow-y: initial;
+  }
+
+  .fieldContainer {
+    top: 0;
+  }
+
+  .searchContainer {
+    padding: 11px 15px 11px 18px;
+  }
+
+  .results {
+    top: 19px;
+    background-color: #eee;
+    padding: 32px 0 16px;
+    max-height: 50vh;
+    display: none;
+  }
+
+  .results__active {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .searchContainer {
+    padding: 11px 15px 11px 30px;
+  }
+}

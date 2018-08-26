@@ -1,0 +1,59 @@
+@import "../../../../styles/colors.css";
+@import "../../../../styles/icons.css";
+@import "../../../../styles/viewports.css";
+
+.container {
+  background-color: #fff;
+  height: 78px;
+  padding: 0 16px 16px;
+}
+
+.hitArea {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  height: 100%;
+}
+
+.chevronRight,
+.chevronLeft {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+  opacity: 0.5;
+  top: calc(50% - 15px);
+  cursor: pointer;
+  outline: none;
+  display: none;
+}
+
+@media (any-hover: hover) {
+  .hitArea:hover .chevronRight,
+  .hitArea:hover .chevronLeft {
+    display: block;
+  }
+}
+
+.chevronRight {
+  right: 0;
+  background-image: svg-inline(chevron-right);
+}
+
+.chevronLeft {
+  left: 0;
+  transform: rotate(180deg);
+  background-image: svg-inline(chevron-right);
+}
+
+@media (min-width: 375px) {
+  .container {
+    height: 96px;
+  }
+}

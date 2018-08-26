@@ -1,0 +1,23 @@
+export default {
+  BrowseCountryKey: "browseCountry",
+  FloorCookieName: "floor",
+  AsosCookieName: "asos",
+  CurrencyCookieName: "currency",
+  CurrencyIdKey: "currencyid",
+  CurrencyLabelKey: "currencylabel",
+  SizeSchemaKey: "sizeSchema",
+  PreferredSiteKey: "PreferredSite",
+  TopCatIdKey: "topcatid",
+  WelcomeMessage: "welcomeMessageClosed",
+  BrowseCurrencyKey: "browseCurrency",
+  BrowseLanguageKey: "browseLanguage",
+  BrowseSizeSchemaKey: "browseSizeSchema",
+  StoreCodeKey: "storeCode",
+  TemplateVersionKey: "siteChromeVersion",
+  KeyStoreDataversionKey: "keyStoreDataversion",
+  GeoCountryKey: "geocountry",
+  AffiliateCookieName: "asosAffiliate",
+  AffiliateKey: "affiliateId",
+  WelcomeMatWrong: "welcomeMatWrong",
+  WelcomeMatCorrect: "welcomeMatCorrect"
+};

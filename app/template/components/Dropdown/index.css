@@ -1,0 +1,153 @@
+@import "../../styles/colors.css";
+@import "../../styles/viewports.css";
+@import "../../styles/typography.css";
+@import "../../styles/global.css";
+
+:root {
+  --animationTime: 0.6s;
+  --transitionDelay: 250ms;
+}
+
+.wrapper {
+  position: relative;
+  touch-action: none;
+  z-index: 10;
+  outline: none;
+}
+
+.wrapper > button:-moz-focusring {
+  padding: 20px 15px;
+  outline: 1px dotted white;
+}
+
+.wrapper__open .outerWrapper::before {
+  opacity: 1;
+}
+
+.wrapper__open .slidedown {
+  transform: translateY(0);
+}
+
+.wrapper__hidden .outerWrapper,
+.wrapper__hidden .slidedown {
+  visibility: hidden;
+}
+
+.wrapper__open .outerWrapper {
+  max-height: 100vh;
+}
+
+:global(#myAccountDropdown) .outerWrapper {
+  left: -175px;
+}
+
+:global(#miniBagDropdown) .outerWrapper {
+  left: -275px;
+}
+
+:global(#myAccountDropdown) .outerWrapper::before {
+  left: 185px;
+}
+
+:global(#miniBagDropdown) .outerWrapper::before {
+  left: 285px;
+}
+
+:global(.headroom--unpinned.headroom--scrolled) .wrapper__open .outerWrapper {
+  top: 100px;
+}
+
+.outerWrapper {
+  position: absolute;
+  overflow: hidden;
+  top: 50px;
+  width: 325px;
+  transition: max-height var(--animationTime);
+  transition-delay: var(--transitionDelay);
+  max-height: 0;
+}
+
+.outerWrapper::before {
+  content: "";
+  width: 0;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 11px solid #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity var(--animationTime);
+  transition-delay: var(--transitionDelay);
+  z-index: 1;
+}
+
+.innerWrapper {
+  left: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slidedown {
+  background-color: var(--white-three);
+  border: 1px solid #ddd;
+  box-shadow: -2px 2px 4px 0 color(#2d2d2d a(14%));
+  transform: translateY(calc(-100% - 5px));
+  transition: transform var(--animationTime);
+  transition-delay: var(--transitionDelay);
+  min-height: 255px;
+  max-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  background-color: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  flex-shrink: 1;
+}
+
+.header {
+  background-color: #eee;
+  box-sizing: border-box;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.footer {
+  display: flex;
+  background-color: var(#333333);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.close {
+  color: #2d2d2d;
+  cursor: pointer;
+  margin: 2px;
+  padding: 0 12px;
+}
+
+.close:hover {
+  color: #2a52be;
+}
+
+.close svg {
+  height: 19px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: initial;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../styles/colors.css";
+
+.container {
+  font-size: 16px;
+  color: #2d2d2d;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 1em;
+}
+
+.bagTitle {
+  font-weight: 900;
+  margin-right: 1ex;
+}

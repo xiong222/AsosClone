@@ -1,0 +1,12 @@
+export const FAILED = "FAILED";
+export const FETCHING = "FETCHING";
+export const LOADING_OPT_IN = "LOADING_OPT_IN";
+export const LOADING_OPT_OUT = "LOADING_OPT_OUT";
+export const LOG_IN_USER = "LOG_IN_USER";
+export const SET_OPT_IN = "SET_OPT_IN";
+export const SET_OPT_OUT = "SET_OPT_OUT";
+export const SET_USER_FETCHING_STATUS = "SET_USER_FETCHING_STATUS";
+export const SET_USER_PREFERENCES = "SET_USER_PREFERENCES";
+export const SET_USER_PROFILE = "SET_USER_PROFILE";
+export const SET_USER_RECONSENT_STATUS = "SET_USER_RECONSENT_STATUS";
+export const SUCCESS = "SUCCESS";

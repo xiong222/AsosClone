@@ -1,0 +1,6 @@
+export const WOMEN_FLOOR_ALIAS = "WW";
+export const MEN_FLOOR_ALIAS = "MW";
+export const SET_NAV_ACTIVE_ITEM = "SET_NAV_ACTIVE_ITEM";
+export const CLEAR_NAV_ACTIVE_ITEM = "CLEAR_NAV_ACTIVE_ITEM";
+export const UPDATE_NAVIGATION_TREE = "UPDATE_NAVIGATION_TREE";
+export const UL_ITEM_COUNT = 11;

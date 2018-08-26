@@ -1,0 +1,68 @@
+@import "../../../../styles/typography.css";
+@import "../../../../styles/colors.css";
+
+:root {
+  --circle-image-link-height: 86px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+.gridItem {
+  width: 50%;
+  padding-bottom: 8%;
+  padding-left: 6px;
+  box-sizing: border-box;
+  text-align: center;
+  max-height: 164px;
+}
+
+.gridItem:nth-child(2n) {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+.gridItem span {
+  @apply --link;
+
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.gridItem__sale span {
+  color: var(--red);
+}
+
+.gridItemImageBorder {
+  padding: 3px;
+  border: solid 1px #ddd;
+}
+
+.gridItemImage {
+  background-position: 0 0;
+  background-size: cover;
+  padding-bottom: 100%;
+}
+
+.gridItemImageBorder,
+.gridItemImage {
+  border-radius: 50%;
+  display: block;
+  max-width: 86px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.gridItem:hover {
+& span {
+    @apply --link-hover;
+  }
+
+& .gridItemImageBorder {
+    border: solid 1px #2a52be;
+  }
+}

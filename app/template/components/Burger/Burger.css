@@ -1,0 +1,39 @@
+@import '../../styles/icons.css';
+@import "../../styles/viewports.css";
+@import "../../styles/accessibility.css";
+
+.burger {
+  height: 100%;
+  width: 22px;
+  padding: 0 18px;
+  box-sizing: content-box;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 14' height='14' width='18' fill='%23fff'%3E%3Cpath d='M0 0h18v2H0zm0 6h18v2H0zm0 6h18v2H0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 14px;
+  background-position: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+.burger:focus {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.burger__hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .burger {
+    width: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
+}

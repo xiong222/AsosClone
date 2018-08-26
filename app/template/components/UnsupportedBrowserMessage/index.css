@@ -1,0 +1,84 @@
+@import "../../styles/typography.css";
+@import "../../styles/colors.css";
+@import "../../styles/icons.css";
+@import "../../styles/viewports.css";
+
+:root {
+  --icon-size: 18px;
+}
+
+.container {
+  left: 0;
+  width: 100%;
+  background-color: var(--background-amber);
+  color: #2d2d2d;
+  border: 0;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+  text-align: left;
+}
+
+.message {
+  padding-left: calc(var(--icon-size) + 40px);
+}
+
+.message::before {
+  position: absolute;
+  left: 18px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  content: "";
+  background: svg-inline(notification) 50% 50% no-repeat;
+}
+
+.header {
+  @apply --user-message-title;
+}
+
+.details {
+  @apply --user-message-detail;
+
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .message {
+    padding-left: calc(var(--icon-size) + 48px);
+  }
+
+  .message::before {
+    left: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .message {
+    padding-left: calc(var(--icon-size) + 48px);
+  }
+
+  .message::before {
+    left: 32px;
+  }
+}
+
+/* display for IE 9 only */
+@media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+  .container {
+    display: block;
+  }
+}
+
+/* display for IE10 only */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .container {
+    display: block\9;
+  }
+}

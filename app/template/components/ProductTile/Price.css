@@ -1,0 +1,53 @@
+
+:root {
+  --highlighted-price: {
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+
+  --regular-price: {
+    font-weight: normal;
+    letter-spacing: 0.5px;
+  }
+}
+
+.container {
+  @apply --small-font;
+
+  color: #2d2d2d;
+  margin: 0;
+  height: var(--price-height);
+}
+
+.altAmount {
+  display: inline-block;
+}
+
+.from {
+  color: #2d2d2d;
+}
+
+.container_highlighted .from {
+  color: var(--red);
+}
+
+.amount {
+  @apply --highlighted-price;
+
+  color: #666;
+  white-space: nowrap;
+}
+
+.container_highlighted .amount {
+  @apply --regular-price;
+
+  color: #2d2d2d;
+  text-decoration: line-through;
+}
+
+.saleAmount,
+.outletAmount {
+  @apply --highlighted-price;
+
+  color: var(--red);
+}

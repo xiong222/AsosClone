@@ -1,0 +1,97 @@
+.rn_CheckKorea{}
+#languagesupportpopup{background-color: #E4F5FF;padding: 8px;display: inline-block;width: 100%;}
+#lsp1{display: inline-block;width: 250px;float: left;padding: 20px;letter-spacing: 1px;font-size: 16px;font-weight: bold;}
+#lsp2{display: inline-block;float: left;padding: 20px;border-left: 1px solid #DEDEDE;font-size: 15px;letter-spacing: 0.5px;width: 360px;padding-right: 0px;}
+#lsp3{display: inline-block;float: right;width: 250px;padding-right: 30px;text-align: center;padding-top: 5px;}
+#lsp3 a{display: inline-block;padding: 15px;background-color: #000;color: #FFF;font-size: 14px;text-decoration: none;letter-spacing: 0.5px;width: 180px;text-align: left;background-image: url("../themes/ASOSDeskUIV2/images/laaqicon.png");background-repeat: no-repeat;background-position: 170px;padding-left: 30px;}
+.rn_urgentupdates{}
+#urgentupdated_maindiv{}
+#urgentupdate1{background-color:rgb(252,228,189);padding:12px;margin-bottom:15px;display:inline-block;font-size:16px;line-height:24px;width:100%;padding-top:10px;}
+#urgentupdate2{background-color:rgb(252,228,189);padding:12px;margin-bottom:15px;display:inline-block;font-size:16px;line-height:24px;width:100%;padding-top:10px;}
+#urgentupdate3{background-color:rgb(252,228,189);padding:12px;margin-bottom:15px;display:inline-block;font-size:16px;line-height:24px;width:100%;padding-top:10px;}
+#urgentupdate4{background-color:rgb(252,228,189);padding:12px;margin-bottom:15px;display:inline-block;font-size:16px;line-height:24px;width:100%;padding-top:10px;}
+#urgentupdate5{background-color:rgb(252,228,189);padding:12px;margin-bottom:15px;display:inline-block;font-size:16px;line-height:24px;width:100%;padding-top:10px;}
+.update_heading{width: 335px;text-align: center;font-weight: bold;font-size: 18px;line-height:24px;text-transform: uppercase;letter-spacing:0.5px;}
+.update_text{width:595px;font-size:16px;letter-spacing:0.5px;}
+.update_text a{color:black;text-decoration:underline;}
+.update_heading{width: 45%;}
+.update_text{width: 90%;display:inline-block;}
+#urgentupdated_maindiv table{width:100%;}
+.rn_SearchBox{}
+.rn_SimpleSearch{border: 1px solid black;}
+.rn_SimpleSearch .rn_SearchField{color:#969696;font-size:18px;}
+.rn_CategoryBoxFaqs{}
+.div_CategoryBoxFaqs_box{width:270px;display:inline-block;float:left;padding:20px;margin-bottom:22px;position: relative;}
+.div_heading{font-size:14px;font-weight:bold;text-transform:uppercase;margin-bottom:14px;text-align:center;letter-spacing:2px;}
+.div_default_heading{font-size:14px;font-weight:bold;text-transform:uppercase;margin-bottom:14px;text-align:center;margin-top:20px;margin-bottom:10px;letter-spacing:2px;}
+.div_default_image{display:inline-block;width:100%;text-align:center;margin-top:15px;margin-bottom:12px;}
+.div_links_ind div{display:inline-block;font-size:16px;font-weight:normal;line-height:20px;width:100%;margin-bottom:14px;}
+.div_links_all{display:inline-block;font-size:14px;font-weight:bold;line-height:20px;width:100%;}
+.div_links_all a{background-repeat: no-repeat;background-position: right 80%;display:inline-block;padding-right:12px;}
+.div_CategoryBoxFaqs_box a{text-decoration:none;color:black;letter-spacing:0.5px;}
+.div_CategoryBoxFaqs_box a:hover{text-decoration:underline;}
+.div_output{display:none;height:170px;}
+.div_default{cursor:pointer;display:inline-block;width:100%;height:170px;}
+.div_CategoryBoxFaqs_box{width: 33%;padding:0px;position:relative;margin-bottom: 0px;}
+#div_CategoryBoxFaqs_layout{margin-top: 30px;display: inline-block;width: 100%;}
+.div_CategoryBoxFaqs_box_inn{display: inline-block;padding: 5%;width: 85%;background-color: rgb(255, 244, 243);margin-bottom: 10%;}
+.div_CategoryBoxFaqs_box_inn .div_default,.div_CategoryBoxFaqs_box_inn:hover .div_output {display: inline-block;}
+.div_CategoryBoxFaqs_box_inn:hover .div_default, .div_CategoryBoxFaqs_box_inn .div_output {display: none;}
+.rn_PopularQuestions{}
+#div_PopularQuestions h2{font-size:20px;line-height:22px;letter-spacing:2px;color:#222222;font-weight:bold;text-transform:uppercase;}
+#div_PopularQuestions{text-align:center;}
+#div_PopularQuestions_otr{padding:25px;padding-top:18px;}
+#div_PopularQuestions_impfaqs{margin-top:33px;text-align:center;}
+.div_PopularQuestions_impfaqs_ind{width:600px;font-size:18px;padding-top:24px;padding-bottom:25px;text-align:center;display:inline-block;margin-bottom:19px;background-color:white;}
+.div_PopularQuestions_impfaqs_ind a{text-decoration:none;color:#2d2d2d;line-height: 30px;letter-spacing:0.5px;}
+.div_PopularQuestions_impfaqs_ind a:hover{text-decoration:underline;}
+.rn_AskButtons{}
+#AskButtons_Heading{font-size: 20px;line-height: 22px;font-weight: bold;text-transform: uppercase;width: 100%;text-align: center;letter-spacing: 2px;}
+#AskButtons_ButtonsDiv{display: inline-block;width: 810px;margin-top: 27px;margin-bottom: 20px;margin-left: 12px;}
+#AskButtons_ButtonsDiv div{display: inline-block;}
+#AskButtons_MainDiv{display: inline-block;text-align: center;width: 100%;}
+#AskButtons_ButtonsDiv div a{text-transform: uppercase;font-size: 14px;text-decoration: none;text-align: left;margin-right: 20px;letter-spacing: 1.4px;}
+#AskButtons_askaq{background-color: rgb(147, 97, 180);width: 220px;background-repeat: no-repeat;background-position: 10px center;color: white;border: 2px solid rgb(147, 97, 180);padding-left: 52px;padding-right: 20px;padding-top: 13px;padding-bottom: 14px;display: inline-block;}
+#AskButtons_tweet{background-color: white;width: 220px;background-repeat: no-repeat;background-position: 10px center;color: black;border: 2px solid rgb(181, 181, 181);padding-left: 52px;padding-right: 20px;padding-top: 14px;padding-bottom: 14px;display: inline-block;}
+#AskButtons_faceb{background-color: white;width: 220px;background-repeat: no-repeat;background-position: 10px center;color: black;border: 2px solid rgb(181, 181, 181);padding-left: 52px;padding-right: 20px;padding-top: 14px;padding-bottom: 14px;display: inline-block;}
+#AskButtons_chat_avail{background-color: black;width: 220px;background-repeat: no-repeat;background-position: 10px center;color: white;border: 2px solid black;padding: 8px 20px;padding-top: 11px;padding-bottom: 10px;position: relative;top: 4px;padding-left: 52px;display: inline-block;}
+#AskButtons_chat_avail_un{background-color: rgb(173, 173, 173);width: 220px;background-repeat: no-repeat;background-position: 10px center;color: white;border: 2px solid rgb(173, 173, 173);padding: 8px 20px;padding-top: 11px;padding-bottom: 10px;position: relative;top: 4px;padding-left: 52px;display: inline-block;}
+.align_chattxt{position: relative;top: -4px;left: 7px;}
+.tdiv{margin-bottom: 20px;}
+.in_txt{}
+.rn_ConditionalChatLink a{display: none;}
+#AskButtons_chat_avail_un{display: inline-block;}
+#AskButtons_chat_avail{display: inline-block;}
+#AskButtons_ButtonsDiv div a{text-transform: uppercase;font-size: 14px;text-decoration: none;text-align: left;margin-right: 20px;letter-spacing: 1.4px;padding-left: 25px;padding-right: 25px;background-position: 20px 13px;}
+#div_AskButtons_chat_avail a{}
+#AskButtons_chat_avail{background-color: black;width: 220px;background-repeat: no-repeat;background-position: 10px center;color: white;border: 2px solid black;padding-top: 11px;padding-bottom: 8px;position: relative;top: 4px;display: inline-block;font-weight: bold;}
+#div_AskButtons_chat_avail .in_txt{display: inline-block;width: 100%;text-align: center;padding-top: 3px;padding-bottom: 0px;background-repeat: no-repeat;background-position: 18px 0px;}
+.tdiv img{display: none;}
+#AskButtons_askaq{background-color: rgb(147, 97, 180);width: 230px;background-repeat: no-repeat;color: white;border: 2px solid rgb(147, 97, 180);padding-left: 52px;padding-right: 20px;padding-top: 10px;padding-bottom: 12px;display: inline-block;font-weight: bold;}
+.in_txt{display: inline-block;width: 100%;text-align: center;}
+#AskButtons_ButtonsDiv div #AskButtons_askaq{background-position: 20px 12px;}
+#AskButtons_tweet{background-size: 24px;}
+#AskButtons_faceb{}
+#AskButtons_ButtonsDiv{width: auto;}
+#AskButtons_ButtonsDiv #AskButtons_faceb{width: 240px;}
+#AskButtons_ButtonsDiv #AskButtons_tweet{width: 240px;}
+#AskButtons_ButtonsDiv div a{width: 240px;}
+.in_txt{font-weight: bold;}
+#AskButtons_ButtonsDiv div #AskButtons_faceb{background-position: 20px 8px;padding-top: 11px;padding-bottom: 11px;}
+#AskButtons_ButtonsDiv div #AskButtons_tweet{background-position: 20px 8px;padding-top: 11px;padding-bottom: 11px;}
+.bdiv .in_btn_3{margin-bottom: 20px;}
+.rn_SimpleSearch{position:relative;}
+.rn_SimpleSearch .rn_SearchField{width:97%;}
+.rn_SimpleSearch .rn_SearchImage{border:none;padding:0;position:absolute;right:0.2em;top:0.46em;*right:0.28em;*top:0.6em;}
+.rn_SimpleSearch{margin:auto;max-width:400px;width:400px;background-color:white;height:46px;}
+.rn_SimpleSearch form{background-color:#FFF;border:1px solid #B1B1B1;}
+.rn_SimpleSearch .rn_SearchField{height:43px;margin-top:0px;width:350px;padding-left: 10px;border-width: 1px;border-style: solid;border-color: white;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-image: none;float:right;font-size:18px;padding-top:0px;margin-left:-10px;letter-spacing: 1px;}
+.rn_SimpleSearch .rn_SearchImage{position: absolute;left: 0px;top: 0px;padding-top:1px;}
+.rn_SearchBoxWidget.rn_SimpleSearch{}
+.rn_HomeMultiline.rn_Multiline{}
+.leftbox{width: 650px;text-align: center;display: inline-block;background-repeat: no-repeat;background-position: 3px 17px;}
+.rightbox{width: 635px;text-align: center;display: inline-block;background-repeat: no-repeat;background-position: 99.9% 14px;}
+.leftbox{width: 88%;text-align: center;display: inline-block;background-repeat: no-repeat;background-position: 13.5% 17px;}
+.rightbox{width: 88%;text-align: center;display: inline-block;background-repeat: no-repeat;background-position: 86.1% 14px;}
+.div_PopularQuestions_impfaqs_ind{width:70%;}
+

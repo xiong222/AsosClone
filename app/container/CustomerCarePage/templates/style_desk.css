@@ -1,0 +1,330 @@
+@font-face{font-family:futura-pt;src:url("../../../../assets/fonts/FTN45__W.eot");src:url("../../../../assets/fonts/FTN45__W.eot?#iefix") format("embedded-opentype"),url("../../../../assets/fonts/FTN45__W.woff2") format("woff2"),url("../../../../assets/fonts/FTN45__W.woff") format("woff"),url("../../../../assets/fonts/FTN45__W.ttf") format("truetype"),url("../../../../assets/fonts/FTN45__W.svg#FuturaPTWeb-Book") format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:futura-pt;src:url("../../../../assets/fonts/FTN75__W.eot");src:url("../../../../assets/fonts/FTN75__W.eot?#iefix") format("embedded-opentype"),url("../../../../assets/fonts/FTN75__W.woff2") format("woff2"),url("../../../../assets/fonts/FTN75__W.woff") format("woff"),url("../../../../assets/fonts/FTN75__W.ttf") format("truetype"),url("../../../../assets/fonts/FTN75__W.svg#FuturaPTWeb-Heavy") format("svg");font-weight:700;font-style:normal}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+#rn_Container table{border-collapse:collapse;border-spacing:0;
+  font-family: "futura-pt", Tahoma, Arial, Verdana, Sans-Serif, sans-serif;}
+#rn_Container fieldset,#rn_Container img{border:0;}
+#rn_Container address,
+#rn_Container caption,
+#rn_Container cite,
+#rn_Container code,
+#rn_Container dfn,
+#rn_Container th,
+#rn_Container var{font-style:normal;font-weight:normal;}
+#rn_Container ul,
+#rn_Container ol,
+#rn_Container li,
+#rn_Container dl,
+#rn_Container dt,
+#rn_Container dd{list-style:none;}
+#rn_Container caption,th{text-align:left;}
+#rn_Container h1,
+#rn_Container h2,
+#rn_Container h3,
+#rn_Container h4,
+#rn_Container h5,
+#rn_Container h6{font-size:100%;font-weight:normal;}
+#rn_Container q:before,q:after{content:'';}
+#rn_Container abbr,acronym{border:0;font-variant:normal;}
+#rn_Container sup{vertical-align:text-top;}
+#rn_Container sub{vertical-align:text-bottom;}
+#rn_Container input,textarea,select{
+  font-family: "futura-pt", Tahoma, Arial, Verdana, Sans-Serif, sans-serif;font-size:inherit;font-weight:inherit;margin:0;padding:0;}
+#rn_Container legend{color:#000;padding:0;}
+#rn_Container a img, iframe{border: none;}
+html{background:#FFF;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;}
+html[lang="ja-JP"], html[lang="ja-JP"] input, html[lang="ja-JP"] textarea, html[lang="ja-JP"] select{font-family:"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", "MS PGothic", "MS Pゴシック", Helvetica, Arial, sans-serif;}
+#rn_Container body{font-size:16px;text-align:left;}
+#rn_Container h3, h4, h5, h6{font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;font-weight:bold;}
+#rn_Container h1{font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;font-weight:bold;}
+#rn_Container h2{font-size:21px;font-weight:bold;}
+#rn_Container .h2header{font-size:21px;font-weight:bold;line-height:1.4em;margin-top:10px;}
+#rn_Container .h2headerorange{font-size:20px;font-weight:normal;line-height:16px;margin-top:30px;font-weight:bold;color:#a9a9a9;font-family: "futura-pt",Tahoma, Arial, Verdana, Sans-Serif;letter-spacing: 0.4px;}
+#rn_Container .h2headerorange1{font-size:20px;font-weight:normal;line-height:1.4em;margin-top:16px;font-weight:bold;font-family: "futura-pt",Tahoma, Arial, Verdana, Sans-Serif;text-transform: uppercase;}
+#rn_Container .h2headerl{font-size:20px;font-weight:bold;line-height:1.4em;margin-top:10px;}
+#rn_Container h3{color:#2F2F2F;font-size:1.167em;font-weight: bold;line-height:1.3em;}
+#rn_Container h4{color:#404040;font-size:1em;line-height:1.3em;}
+#rn_Container h5{color:#505050;font-size:0.917em;line-height:1.0em;}
+#rn_Container h6{color:#505050;font-size:0.833em;line-height:.8em;}
+#rn_Container p{margin-bottom:1em;}
+#rn_Container table{border-collapse:separate;border-spacing:0.3em;}
+#rn_Container hr{margin:10px 0px;}
+#rn_Container strong{font-weight: bolder;}
+#rn_Container caption{color:#404040;font-size:1em;font-weight:bold;line-height:1.3em;}
+#rn_Container blockquote{margin:10px 30px;}
+#rn_Container input[type="text"], input[type="password"], input[type="email"], input[type="url"]{height:22px;}
+#rn_Container input, textarea, select{border:solid 1px #B1B1B1;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;padding:2px;}
+#rn_Container input[type="file"]{font-size:12px;border:none;}
+#rn_Container input[type="submit"],
+#rn_Container button{*width:auto;*overflow:visible;background-color: black;border: 1px solid rgb(48, 71, 100);color: rgb(255, 255, 255);cursor: pointer;font-size: 14px;font-weight: bold;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;margin-right: 6px;text-decoration: none;display: inline-block;float: left;padding: 8px 15px;margin-top: 1px;-webkit-appearance: none;-webkit-border-radius: 0;}
+#rn_Container input[type="submit"]:hover,#rn_Container input[type="submit"]:focus,
+#rn_Container button:hover,#rn_Container  button:focus{background-position: 0px -40px;cursor:pointer;}
+#rn_Container input[type="submit"][disabled],
+#rn_Container button[disabled]{background-color:#F2F2F2;background-position: 0px -40px;border-color:#F7F7F7;color:#050505;text-shadow: none;}
+.rnOverrideA a:hover{color:white;}
+
+#asosfooter{padding:0px;width:947px;margin-left: auto;margin-right: auto;}
+#rn_Container{padding:0px;width:1004px;margin-left: auto;margin-right: auto;overflow:visible;text-align:left;}
+#rn_Header{color:#FFF;height:80px;min-height:80px;overflow:visible;padding:0px;}
+#rn_Logo{cursor:pointer;float:left;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;height:80px;letter-spacing:-0.8px;margin-top:8px;position:relative;width:32%;}
+#rn_Logo a{bottom:0;color:#FFF;cursor:pointer;font-size:12px;font-weight:normal;left:0;line-height:1em;text-decoration:none;}
+#rn_Logo a span.rn_LogoTitle{cursor:pointer;top:20px;position:relative;}
+#rn_Logo a span.rn_LogoTitleMinor{color:#DEDEDE;}
+#rn_Logo a img{display:block;}
+#rn_LoginStatus{font-size:0.917em;text-align:right;}
+#rn_LoginStatus a{font-weight:bold;text-decoration:none;}
+#rn_Navigation{background:transparent none repeat scroll center top;height:31px;_height:28px;margin:0px;padding:0px;width:947px;}
+#rn_NavigationBar{float:left;height:14px;}
+#rn_NavigationBar ul li{float:left;}
+#rn_Footer, #rn_Body{background:#FFF;overflow:hidden;padding:0px;margin:0px;text-align:left;width:980px;}
+#rn_MainColumn{background:#FFF;float:left;margin-right:8px;min-height:650px;height:auto !important;height:650px;overflow:visible;padding:0px 0px 0px 0px;width:100%;}
+#rn_SideBar{float:right;margin-right:0px;width:23%;}
+#rn_Footer{border-bottom:1px solid #E2E2E2;}
+#rn_RightNowCredit{border-top:1px solid #DDD;clear:both;padding:10px 0px 10px 0px;text-align:right;margin:auto 20px;}
+#rn_Container , #rn_Container fieldset legend{color:#000;font-size:100%;}
+#rn_SideBar .rn_Padding{padding:16px 0px 2px 10px;overflow:auto;}
+.rn_HelpResources{margin:0 4px 10px 4px;font-size:1.2em;line-height:1.2em;}
+.rn_HelpResources .rn_Questions, .rn_HelpResources .rn_Community, .rn_HelpResources .rn_Contact, .rn_HelpResources .rn_Chat, .rn_HelpResources .rn_Feedback{margin-top:10px;}
+.rn_HelpResources a{background:url(../themes/ASOSDeskUIV2/images/layout/contactDiscs.png) no-repeat;color:#000;display:block;font-size:1.5em;margin:4px;min-height:22px;height:auto !important;height:22px;padding:10px 0 0 40px;text-decoration:none;}
+.rn_HelpResources a:hover{text-decoration:none;}
+.rn_HelpResources span{display:block;margin:0 0 0 44px;}
+.rn_HelpResources .rn_Questions a{background-position: 0px -4px;}
+.rn_HelpResources .rn_Contact a{background-position: 0px -48px;}
+.rn_HelpResources .rn_Chat a{background-position: 0px -96px;}
+.rn_HelpResources .rn_Feedback a{background-position: 0px -140px;}
+.rn_HelpResources .rn_Community a{background-position: 0px -184px;}
+#rn_SearchControls{clear:left;float:left;overflow:visible;padding:0px 0 0px 0px;position:relative;width:100%;text-align: left;}
+#rn_SearchControls form{padding: 10px 0px 6px;margin-left: 4px;margin-bottom: 2px;}
+#rn_SearchControls input{_margin:1.3em 0 0 1.3em;_padding:.4em 1em;}
+#rn_SearchControls .rn_SearchInput{float:left;position:relative;width:25%;margin-left: 310px;}
+#rn_SearchControls .rn_SearchInput a{color:#25383C;display:block;float:right;font-size:.917em;margin-right:-8px;*margin-right:0;*position:absolute;*right:-8px;_right:0px;text-decoration: none;}
+#rn_SearchControls .rn_SearchInput label{bottom:0px;position:absolute;font-size: 1.2em;color:black;*bottom:-50px !important;*position:relative !important;}
+#rn_SearchControls .rn_SearchInput input{font-weight:bold;height:1.3em;margin-bottom:20px;_margin: 0;padding:4px 4px 3px;width:100%;}
+#rn_PageTitle{color:black;overflow:hidden;padding:16px 0 0;}
+#rn_PageTitle.rn_Home, #rn_PageTitle.rn_QuestionList, #rn_PageTitle.rn_AnswerList{border-bottom:0;overflow:visible;}
+#rn_PageTitle.rn_AnswerDetail{padding:16px 0 5px;line-height: 1.2em;font-size: 2.2em;}
+#rn_PageTitle.rn_Home{margin-bottom:10px;}
+#backreslink{color: rgb(85, 85, 85);text-decoration: none;font-size: 14px;text-transform: uppercase;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;background-image:url('../themes/ASOSDeskUIV2/images/arrowleft_right.png');background-position:left 55%;background-repeat:no-repeat;padding-left:10px;line-height:16px;}
+#backtoresdi{padding-bottom: 30px;padding-top:2px;}
+#backtoresdi a:hover{text-decoration:underline;}
+#rn_PageTitle h1, #rn_PageTitle h2, #rn_PageTitle h3, #rn_PageTitle h4, #rn_PageTitle h5, #rn_PageTitle h6{clear:left;word-wrap:break-word;}
+#rn_PageTitle p{clear:both;}
+#rn_PageContent{clear:both;overflow:visible;}
+#rn_PageContent form h2, .rn_HeadingBar{background:#F9F9F9;border:1px solid #CCC;clear:both;color:#414142;letter-spacing:-0.03em;padding:4px;margin:20px 0 10px;}
+#rn_Container form legend{font-size:0em;visibility:hidden;}
+#rn_Container form fieldset{padding-left:8px;}
+#rn_Container form button{margin-top:20px;}
+#rn_Container form .rn_Column{margin-bottom:10px;}
+.rn_HintBox{background-color:#F2F2F2;border:1px solid #DBDBDB;color:#222;display:block;opacity:.7;padding:4px 16px 2px;-webkit-border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;-moz-border-radius-bottomright:10px;-moz-border-radius-topright:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;}
+.rn_HintText{color:#222;display:block;font-size:.963em;font-style:italic;max-width:500px;width:99%;}
+.rn_Required, .rn_ErrorLabel{}
+.rn_ErrorField{background-color:rgb(250,241,236) !important;}
+.rn_MessageBox{background-color:#FFFFFF;color:black;margin:10px 0;padding:6px;}
+.rn_ErrorMessage{padding:8px 6px 8px 1px !important;}
+.rn_ErrorMessage a{font-family: "futura-pt",Tahoma,Arial,Verdana,Sans-Serif;font-size: 16px;color: red;font-weight: normal;}
+.rn_InfoMessage{padding:6px 6px 4px 40px !important;}
+.rn_Dialog{overflow:visible;background-color: white;border:1px solid black;padding:15px;}
+.rn_Dialog ol, .rn_Dialog ul{padding:0.4em 0 0 1.8em;}
+.rn_Dialog ol li{list-style:decimal outside none;}
+.rn_Dialog ul li{list-style:disc outside none;}
+.yui3-skin-sam .rn_Dialog.yui3-panel-content .yui3-widget-hd .yui3-button-close{width: 16px;font-size:16px;display:block;}
+.yui3-panel-content{font-size:16px;}
+.yui3-widget-bd{font-size: 14px;padding-top:10px;padding-bottom:10px;}
+#imgupdiv{width: 21px;float: right;position: relative;top: -135px;left: 17px;display:none;}
+.yui3-button-close{background-image: url("../themes/ASOSDeskUIV2/images/btn_close.png");background-repeat: no-repeat;height: 25px;width: 1px;display: block;background-color: white;border: 1px solid white;box-shadow: none;background-position: right;width:50px;}
+.yui3-button-close:hover{background-image: url("../themes/ASOSDeskUIV2/images/btn_close.png");background-repeat: no-repeat;height: 25px;width: 1px;display: block;background-color: white;border: 1px solid white;box-shadow: none;background-position: right;width:50px;}
+.rn_MessageDialogIcon.rn_HelpContent, .rn_MessageDialogIcon.rn_WarningContent, .rn_MessageDialogIcon.rn_TipContent, .rn_MessageDialogIcon.rn_AlertContent, .rn_MessageDialogIcon.rn_AlarmContent, .rn_MessageDialogIcon.rn_BlockContent{background-image: url(../themes/ASOSDeskUIV2/images/icons/messageDialog.png);background-repeat: no-repeat;display: inline-block;height: 17px;margin-right: 10px;vertical-align: sub;width: 20px;}
+.rn_MessageDialogIcon.rn_HelpContent{background-position:0 -50px;}
+.rn_MessageDialogIcon.rn_WarningContent{background-position:0 3px;}
+.rn_MessageDialogIcon.rn_TipContent{background-position:0 -31px;height: 17px;}
+.rn_MessageDialogIcon.rn_AlertContent{background-position:0 -14px;}
+.rn_MessageDialogIcon.rn_AlarmContent{background-position:0 -86px;}
+.rn_MessageDialogIcon.rn_BlockContent{background-position:0 -68px;height: 17px;}
+.rn_Module{clear:both;margin-bottom: 12px;overflow:hidden;padding-bottom:8px;}
+.rn_Module h3, .rn_Module h2{background-color:white;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;font-weight:normal;font-size:1.8em;margin-top: 0px;margin-bottom:8px;padding:4px;color: black;}
+.rn_Module2{clear:both;margin-bottom: 12px;overflow:hidden;padding-bottom:8px;}
+.rn_Module2 h3, .rn_Module2 h2{background-color:white;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;font-weight:normal;font-size:1.8em;margin-top: 0px;margin-bottom:8px;padding:4px;color: black;}
+.rn_FileTypeIcon{background:url(../themes/ASOSDeskUIV2/images/icons/fileIcons.png) no-repeat;display:inline-block;vertical-align:top;height:16px;width:16px;}
+.rn_FileTypeIcon.rn_url{background-position: 0px -17px;}
+.rn_FileTypeIcon.rn_doc, .rn_FileTypeIcon.rn_docx{background-position: 0px -34px;}
+.rn_FileTypeIcon.rn_xls, .rn_FileTypeIcon.rn_xlsx{background-position: 0px -51px;}
+.rn_FileTypeIcon.rn_ppt, .rn_FileTypeIcon.rn_pptx{background-position: 0px -68px;}
+.rn_FileTypeIcon.rn_txt, .rn_FileTypeIcon.rn_rtf{background-position: 0px -85px;}
+.rn_FileTypeIcon.rn_gif, .rn_FileTypeIcon.rn_png, .rn_FileTypeIcon.rn_jpg, .rn_FileTypeIcon.rn_jpeg{background-position: 0px -102px;}
+.rn_FileTypeIcon.rn_zip{background-position: 0px -119px;}
+.rn_FileTypeIcon.rn_pdf{background-position: 0px -136px;}
+.rn_FileTypeIcon.rn_rightnow{background-position: 0px -153px;}
+.rn_FloatRight{float:right;}
+.rn_FloatLeft{float:left;}
+.rn_Padding{padding:8px 10px 2px 10px;}
+.rn_ClearBoth{clear:both;}
+.rn_Highlight{}
+.rn_ColumnContainer{width:100%;}
+.rn_Column{width:48%;}
+.rn_LeftColumn{float: left;padding:0 4px 0 0;}
+.rn_RightColumn{float:right;padding: 0 0 0 4px;}
+.rn_LargeText{font-size:1.333em;font-weight:bold;line-height:1.4em;}
+#rn_Summary{font-weight: normal;padding: 7px 0px;padding-bottom: 0px;line-height: 30px;width: 550px;display: block;float: left;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;font-size:28px;padding-top:12px;}
+#rn_AnswerInfo{color:#888;margin:6px 0 20px;display:inline-block;font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;font-size: 11px;line-height:18px;}
+#rn_AnswerInfo div{display:inline;}
+#rn_AnswerText{clear: both;line-height: 18px;padding: 5px 0px 15px;font-size: 14px;color: rgb(85, 85, 85);font-family:"futura-pt",Tahoma, Arial, Verdana, Sans-Serif;padding-bottom: 3px;padding-left:2px;width:98%;}
+#rn_FileAttach{padding-bottom:1em;}
+#rn_AnswerText_ulli ul{list-style: disc outside none;margin-left:20px;}
+#rn_AnswerText_ulli li{list-style: disc outside none;}
+.rn_QuestionDetail ol, .rn_QuestionDetail ul, .rn_AnswerDetail ol, .rn_AnswerDetail ul{padding-left:2em;clear: both;}
+.rn_QuestionDetail > ol, .rn_QuestionDetail > ul, .rn_AnswerDetail > ol, .rn_AnswerDetail > ul, #rn_AnswerText > ol, #rn_AnswerText > ul{margin-bottom:1em;}
+.rn_QuestionDetail li, .rn_AnswerDetail li{line-height:1.4em;margin:4px 0;}
+.rn_QuestionDetail ul li, .rn_AnswerDetail ul li{list-style: disc;}
+.rn_QuestionDetail li ul li, .rn_AnswerDetail li ul li{list-style: circle;}
+.rn_QuestionDetail li li ul li, .rn_AnswerDetail li li ul li{list-style: square;}
+.rn_QuestionDetail ol li, .rn_QuestionDetail li ol li, .rn_QuestionDetail li li ol li, .rn_AnswerDetail ol li, .rn_AnswerDetail li ol li, .rn_AnswerDetail li li ol li{list-style: decimal;}
+#rn_UpdateQuestion textarea{width:98%;}
+#rn_QuestionThread{margin:4px;}
+#rn_AdditionalInfo, #rn_DetailTools{background:#EEE url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==) repeat-x scroll 0 0;*background:#EEE;border:1px solid #BBB;}
+#rn_AdditionalInfo{margin:1em;overflow:hidden;padding:12px;width:560px;}
+#rn_DetailTools{line-height:1em;margin-top:2em;padding:8px 0;text-align: right;}
+#rn_PageContent.rn_Home{overflow: hidden;}
+#rn_PageContent.rn_Home .rn_Module ul{margin:12px;overflow:hidden;width:100%;display:block;}
+#rn_PageContent.rn_Home .rn_Module ul li{float:left;margin:0px;padding:4px;width:32%;display:block;list-style-type: circle;}
+#rn_PageContent.rn_Home .rn_Module ul li span.rn_FileTypeIcon{display:none;}
+#rn_PageContent.rn_Home .rn_Module ul li a{font-size:12px;margin:2px;color:black;list-style-type: circle;text-decoration: none;font-weight: normal;}
+#rn_PageContent.rn_Home .rn_Module a:focus, #rn_PageContent.rn_Home .rn_Module a:hover{text-decoration: none;}
+#rn_PageContent.rn_Home .rn_Module2 ul li{float:left;margin:0px;padding:4px;display:block;list-style-type: circle;}
+#rn_PageContent.rn_Home .rn_Module2 ul li span.rn_FileTypeIcon{display:none;}
+#rn_PageContent.rn_Home .rn_Module2 li:before{content: "> ";}
+#rn_PageContent.rn_Home .rn_Module li:before{content: "> ";}
+#rn_PageContent.rn_Home .rn_Module2 ul li a{font-size:12px;margin:2px;color:black;list-style-type: circle;text-decoration: none;}
+#rn_PageContent.rn_Home .rn_Module2 a:hover{text-decoration: underline;}
+#rn_PageContent.rn_Home .rn_Module a:hover{text-decoration: underline;}
+#rn_PageContent.rn_Home .rn_AnswersLink{display:inline-block;font-size:1.3em;line-height: 1.2em;margin:10px 0 10px 16px;color:white;background-color: black;padding: 0.4em 1em;text-decoration: none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);box-shadow: 0 1px 3px rgba(0,0,0,0.5);border:1px solid #304764;}
+.rn_Overview{padding:12px 10px 2px;}
+.rn_Overview h2{background-color:#F9F9F9;border:1px solid #DDD;margin-top:10px;}
+.rn_Overview h2 a, .rn_Overview h2 strong{background:url(../themes/ASOSDeskUIV2/images/layout/accountOverview.png) no-repeat;color:#505050;display:block;height:26px;margin:4px;outline:none;padding:8px 0 0 40px;text-decoration:none;}
+.rn_Overview a:focus, .rn_Overview a:hover{text-decoration:none;}
+.rn_Overview a.rn_Questions{background-position: 0px 2px;}
+.rn_Overview a.rn_Profile{background-position: 2px -38px;}
+.rn_Overview a.rn_Notifs{background-position: 0px -74px;}
+.rn_Overview strong.rn_Contracts{background-position: 0px -114px;}
+.rn_Overview div.rn_Questions, .rn_Overview div.rn_Notifs, .rn_Overview div.rn_Profile, .rn_Overview div.rn_Contracts{margin:10px 0px 40px 15px;}
+.rn_QuestionList caption{font-size:1.333em;font-weight:bold;line-height:1.4em;}
+.rn_Account.rn_LoginForm h2{color:#404040;font-size:1em;line-height:1.3em;}
+.rn_Account.rn_LoginForm .rn_Column.rn_RightColumn{width:47%;position: relative;left:20px;}
+.rn_Account.rn_LoginForm .rn_Column.rn_LeftColumn{border-right:1px solid #CCC;min-height: 350px;*position:relative;}
+.rn_Account.rn_LoginForm .rn_MiddleBuffer{background:#FFF;bottom:-80px;left:-9px;padding:4px 0;position:relative;}
+.rn_Account.rn_LoginForm .rn_ThirdPartyLogin{*position: relative;}
+.rn_CreateAccount .rn_ThirdPartyLogin{width:550px;min-height:115px;padding-left: 5px;}
+#rn_SkipNav a{left:0px;height:1px;overflow:hidden;position:absolute;top:-500px;width:1px;}
+#rn_SkipNav a:active, #rn_SkipNav a:focus{background-color:#FFF;height:auto;left:auto;top:auto;width:auto;}
+@media print{body{font-size:1em;}
+  #rn_DetailTools, #rn_Header, #rn_Navigation, #rn_SideBar, #rn_Footer{display:none;}
+  #rn_Footer, #rn_Body, #rn_PageContent, #rn_PageTitle, #rn_AdditionalInfo{overflow:visible;}
+  #rn_Body{border: 0;box-shadow: none;font-size:100%;-moz-box-shadow: none;-webkit-box-shadow: none;}
+}
+.footer-links a{color:red;}
+#rn_ChatLaunchFormDiv.rn_ChatForm.rn_Loading{background: url(../themes/ASOSDeskUIV2/images/loading.gif) no-repeat center center;height:auto !important;height:66px;min-height:66px;}
+#rn_ChatContainer{height:100%;margin:0px auto;overflow:hidden;text-align:left;}
+#rn_ChatDialogContainer{background-color:#EBEFF5;border:1px solid #555;overflow-x:hidden;overflow-y:auto;position:relative;height:450px;}
+#rn_ChatDialogHeaderContainer{height:30px;overflow:visible;padding:4px;vertical-align:middle;}
+#rn_ChatDialogTitle{margin-top: 8px;}
+#rn_ChatDialogHeaderButtonContainer button{background: none;border-color: transparent;color: #555;margin-right: .25em;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;padding: 2px;padding-top:10px;}
+#rn_ChatDialogHeaderButtonContainer button:hover, #rn_ChatDialogHeaderButtonContainer button:focus{background-color: #F8F8F8;border-color: #CCC #555 #555 #CCC;color: #000;}
+#rn_InChatButtonContainer{overflow: visible;}
+#rn_PreChatButtonContainer{overflow: visible;}
+#rn_ChatQueueSearchContainer{bottom: 0px;position: absolute;width: 100%;}
+#rn_ChatQueueSearchContainer div.rn_ScreenReaderOnly{display: none;}
+#rn_ChatFooter{padding: 10px;}
+#rn_ChatLogo{height:100px;position: absolute;right: 10px;top: 10px;width:135px;}
+@media print{#rn_ChatDialogHeaderContainer, #rn_InChatButtonContainer, #rn_PreChatButtonContainer, #rn_ChatQueueSearchContainer, #rn_ChatLogo{display:none;}
+  #rn_ChatContainer{border:0;overflow: visible;height: auto;}
+  #rn_ChatDialogContainer{overflow: visible;height: auto;}
+}
+.rn_HighContrastMode input, .rn_HighContrastMode input[type="submit"], .rn_HighContrastMode button, .rn_HighContrastMode textarea, .rn_HighContrastMode select{border: 1px outset;}
+.rn_HighContrastMode.yui-skin-sam .container-close{text-indent: 0;}
+.rn_HighContrastMode.yui-skin-sam .container-close:before{content: "\00D7";display: block;font-size: 24px;width: 20px;height: 20px;}
+.rn_HighContrastMode .ygtvfocus{border: 1px solid #000;}
+.rn_HighContrastMode .ygtvtp:before, .rn_HighContrastMode .ygtvlp:before, .rn_HighContrastMode .ygtvlph:before, .rn_HighContrastMode .ygtvtph:before, .rn_HighContrastMode .ygtvloading:before{content: "\25BA";position: relative;top: 6px;}
+.rn_HighContrastMode .ygtvtm:before, .rn_HighContrastMode .ygtvlm:before, .rn_HighContrastMode .ygtvlmh:before, .rn_HighContrastMode .ygtvtmh:before{content: "\25BC";position: relative;top: 6px;}
+#div_searchbox_layout{margin-top:30px;display:inline-block;width:100%;}
+#div_searchbox_layouttl{margin-top:20px;display:inline-block;width:100%;}
+#div_CategoryBoxFaqs_layout{margin-top:30px;display:inline-block;width:100%;}
+#div_Popularquestions_layout{margin-top:18px;background-color:rgb(231,243,246);display:block;width:100%;}
+#div_top_heading h1{text-decoration:uppercase;width:100%;text-align:center;}
+#div_AccountOrders_layout{}
+#div_AskButtons_layout{margin-top:40px;margin-bottom:30px;}
+#div_AskButtons_layouttl{margin-top:15px;margin-bottom:30px;}
+#div_sitemap_layout{display:inline-block;width:100%;margin-top:20px;}
+#urgentupdated_maindiv{width:100%;display:inline-block;margin-top:10px;margin-bottom:6px;}
+#div_top_heading h1{font-size:30px;text-transform:uppercase;letter-spacing:2.8px;color:#2d2d2d;line-height:38px;}
+#div_top_heading{margin-bottom:-4px;}
+#viewallordersmaindiv_mainheading{font-size:30px;font-weight: bold;letter-spacing: 2.8px;text-transform: uppercase;color: #2d2d2d;margin-top: 22px;}
+#viewallordersmaindiv{display:block;text-align: center;}
+.greentxt{color: #28a017;}
+.orangetxt{color: #ff9800;}
+#rn_Yourordersbox_div_main{display: none;}
+#div_AnswerDetail_Layout_2box_left_share{display:none;}
+#AskButtons_askaq{background-image: url("../themes/ASOSDeskUIV2/images/ASOSUIV2/askaq.jpg");}
+#AskButtons_tweet{background-image: url("../themes/ASOSDeskUIV2/images/ask/twittericon.jpg");}
+#AskButtons_faceb{background-image: url("../themes/ASOSDeskUIV2/images/ask/facebookicon.jpg");}
+#AskButtons_chat_avail{background-image: url("../themes/ASOSDeskUIV2/images/ask/chaticon.jpg");}
+#AskButtons_chat_avail_un{background-image: url("../themes/ASOSDeskUIV2/images/ask/chaticon_un.jpg");}
+.leftbox{background-image: url("../themes/ASOSDeskUIV2/images/arrow_left.png");}
+.rightbox{background-image: url("../themes/ASOSDeskUIV2/images/arrow_right.png");}
+#AskButtons_chat_avail_un{cursor:default;}
+#div_AskMain_layout{display: inline-block;width: 100%;background-color: #EEE;text-align: center;}
+#div_top_heading{margin-bottom: -4px;}
+#div_AskMain_layout_confirm{display: inline-block;width: 100%;background-color: #EEE;text-align: center;padding: 30px;padding-left:0px;}
+#div_top_heading_confirm{margin-top:20px;margin-bottom:20px;text-align:center;}
+#div_top_heading_confirm h1{font-size:25px;letter-spacing:1.5px;}
+#div_AskMain_layout_confirm_txt{display: inline-block;width: 600px;text-align: center;background-color: #FFF;font-size: 16px;padding: 20px;letter-spacing: 0.5px;line-height: 24px;}
+#rn_Container{width: 100%;min-width: 786px;}
+#rn_Body{width: 100%;}
+#rn_MainColumn{margin-right: 0px;}
+#div_CategoryBoxFaqs_layout{margin-top: 30px;display: inline-block;width: 100%;}
+#div_CategoryBoxFaqs{width: 100%;display: inline-block;}
+.rn_HomeMultiline.rn_Multiline{max-width: 1450px;display: inline-block;}
+#div_AskButtons_chat_avail a{background-image: url(../themes/ASOSDeskUIV2/images/channellinks/chat.png);}
+#div_AskButtons_chat_avail .in_txt{background-image: url(../themes/ASOSDeskUIV2/images/channellinks/live.png);}
+#AskButtons_askaq{background-image: url(../themes/ASOSDeskUIV2/images/channellinks/email.png);}
+#AskButtons_tweet{background-image: url(../themes/ASOSDeskUIV2/images/channellinks/twitter.png);}
+#AskButtons_faceb{background-image: url(../themes/ASOSDeskUIV2/images/channellinks/facebook.png);}
+.yui3-widget-stacked .yui3-widget-shim{opacity:0;filter:alpha(opacity=0);position:absolute;border:0;top:0;left:0;padding:0;margin:0;z-index:-1;width:100%;height:100%;_width:0;_height:0}
+#yui3-css-stamp.skin-sam-widget-stack{display:none}
+.yui3-skin-sam .yui3-widget-mask{background-color:black;zoom:1;-ms-filter:"alpha(opacity=40)";filter:alpha(opacity=40);opacity:.4}
+#yui3-css-stamp.skin-sam-widget-modality{display:none}
+.yui3-overlay{position:absolute;}
+.yui3-overlay-hidden{visibility:hidden}
+.yui3-widget-tmp-forcesize .yui3-overlay-content{overflow:hidden !important;}
+.yui3-panel{position:absolute}
+.yui3-panel-hidden{visibility:hidden}
+.yui3-widget-tmp-forcesize .yui3-panel-content{overflow:hidden!important}
+.yui3-panel .yui3-widget-hd{position:relative}
+.yui3-panel .yui3-widget-hd .yui3-widget-buttons{position:absolute;top:0;right:0}
+.yui3-panel .yui3-widget-ft .yui3-widget-buttons{display:inline-block;*display:inline;zoom:1}
+.yui3-skin-sam .yui3-panel-content{-webkit-box-shadow:0 0 5px #333;-moz-box-shadow:0 0 5px #333;box-shadow:0 0 5px #333;border:1px solid black;background:white}
+.yui3-skin-sam .yui3-panel .yui3-widget-hd{padding:8px 28px 8px 8px;min-height:13px;_height:13px;color:white;background-color:#3961c5;background:-moz-linear-gradient(0% 100% 90deg,#2647a0 7%,#3d67ce 50%,#426fd9 100%);background:-webkit-gradient(linear,left bottom,left top,from(#2647a0),color-stop(0.07,#2647a0),color-stop(0.5,#3d67ce),to(#426fd9))}
+.yui3-skin-sam .yui3-panel .yui3-widget-hd .yui3-widget-buttons{padding:8px}
+.yui3-skin-sam .yui3-panel .yui3-widget-bd{padding:10px}
+.yui3-skin-sam .yui3-panel .yui3-widget-ft{background:#edf5ff;padding:8px;text-align:right}
+.yui3-skin-sam .yui3-panel .yui3-widget-ft .yui3-button{margin-left:8px}
+.yui3-skin-sam .yui3-panel .yui3-widget-hd .yui3-button-close{background:transparent;filter:none;border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;width:13px;height:13px;padding:0;overflow:hidden;vertical-align:top;*font-size:0;*line-height:0;*letter-spacing:-1000px;*color:#86a5ec;*background:url(/rnt/rnw/yui_3.13/panel/assets/skins/sam/sprite_icons.png) no-repeat 1px 1px}
+.yui3-skin-sam .yui3-panel .yui3-widget-hd .yui3-button-close:before{content:url(/rnt/rnw/yui_3.13/panel/assets/skins/sam/sprite_icons.png);display:inline-block;text-align:center;font-size:0;line-height:0;width:13px;margin:1px 0 0 1px}
+.yui3-skin-sam .yui3-panel-hidden .yui3-widget-hd .yui3-button-close{display:none}
+#yui3-css-stamp.skin-sam-panel{display:none}
+
+
+#div_AskButtons_chat_avail
+{
+  display:none;
+}
+#AskButtons_askaq {
+  background-image: url(http://asos.custhelp.com/euf/assets/images/email_black.png);
+}
+#AskButtons_askaq {
+  width: 230px;
+  background: white no-repeat;
+  color: black;
+  border: 2px solid rgb(181, 181, 181);
+  padding: 10px 20px 12px 52px;
+  display: inline-block;
+  font-weight: bold;
+}

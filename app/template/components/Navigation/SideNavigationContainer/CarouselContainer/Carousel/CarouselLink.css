@@ -1,0 +1,74 @@
+@import "../../../../../styles/typography.css";
+@import "../../../../../styles/viewports.css";
+@import "../../../../../styles/colors.css";
+@import "../../../../../styles/button.css";
+
+.container {
+  margin-bottom: 16px;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+}
+
+.carouselLink {
+  @apply --h4-text;
+  @apply --reset-button;
+
+  height: 78px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: inherit;
+  background-size: 234px 100%;
+  background-position: 0 0;
+}
+
+.carouselLink:hover {
+  opacity: 0.7;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  width: 140px;
+  color: #2d2d2d;
+  padding: 20px 0 20px 12px;
+  box-sizing: border-box;
+}
+
+.label__light {
+  color: #fff;
+}
+
+.label__sale {
+  color: var(--red);
+}
+
+.label > span {
+  width: 100%;
+  white-space: pre-line;
+}
+
+.subtitle {
+  font-weight: 200;
+}
+
+@media (min-width: 375px) {
+  .carouselLink {
+    @apply --h3-text;
+
+    height: 96px;
+    background-size: 288px 100%;
+  }
+
+  .label {
+    width: 180px;
+  }
+}

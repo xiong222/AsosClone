@@ -1,0 +1,110 @@
+@import "../../styles/viewports.css";
+@import "../../styles/colors.css";
+@import "../../styles/typography.css";
+@import "../../styles/accessibility.css";
+
+.container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header {
+  @apply --h4-text;
+
+  color: #666;
+  line-height: normal;
+  width: 100%;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.button:focus {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.button > span {
+  vertical-align: middle;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover .locationText,
+.button:hover .changeLabel,
+.button:hover .changeLabel::before {
+  color: #2a52be;
+}
+
+.button:hover .countryFlag {
+  box-shadow: 0 0 0 1px #2a52be;
+}
+
+.countryFlag {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #f8f8f8;
+  box-shadow: 0 0 0 1px #ddd;
+  margin: 0 17px;
+}
+
+.withLabels .countryFlag {
+  margin: 0 7px;
+}
+
+.locationText {
+
+
+  color: #666;
+}
+
+.changeLabel {
+  @apply --h4-text;
+
+  color: var(--gray-70);
+  vertical-align: bottom;
+}
+
+.changeLabel::before {
+  content: "|";
+  color: #999;
+  margin-right: 5px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    position: relative;
+    top: -1px;
+    border: none;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    flex: 1;
+  }
+
+  .withLabels .container {
+    margin-left: 16px;
+  }
+
+  .header {
+    display: inline-block;
+  }
+}

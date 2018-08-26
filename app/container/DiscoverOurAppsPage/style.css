@@ -1,0 +1,262 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+/* General styling */
+.creative {
+  width: 974px;
+  position: relative;
+  margin: 0 auto 50px;
+  font-family: futura-pt, FuturaStd, Tahoma, Arial, Verdana, sans-serif; }
+
+/*------ Hidden Sections --------*/
+.creative .floatleft {
+  /*float:left;*/
+  display: inline-block; }
+
+.creative .floatright {
+  float: right; }
+
+.creative .section {
+  text-align: center;
+  display: block;
+  margin: 44px auto 0;
+  width: 100%;
+  border-top: 1px solid #e3e3e3; }
+
+/* Typography */
+.creative a {
+  text-decoration: none;
+  color: #000; }
+
+div.site-content .creative a:hover {
+  text-decoration: none; }
+
+.creative div.site-content a.titlelink {
+  color: #000; }
+
+.creative h1, .creative h2, .creative h3, .creative h4, .creative h5, .creative a, .creative p {
+  color: #000; }
+
+.creative .para {
+  font-size: 15px; }
+
+.creative p {
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0 0 44px 0; }
+
+.creative .aligncenter {
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.creative h5.aligncenter {
+  width: 100%; }
+
+.creative .upperc {
+  text-transform: uppercase;
+  line-height: 33px; }
+
+.creative 0 {
+  font-size: 42px;
+  margin-bottom: 0;
+  margin-top: 37px;
+/*height:43px;*/
+  font-weight: 900; }
+
+.creative h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 41px 0 30px 0; }
+
+.creative h3 {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 10px; }
+
+.creative h4 {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 44px; }
+
+.creative h5 {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 10px 0px 10px 0px; }
+
+.creative h5:hover {
+  text-decoration: none; }
+
+.creative hr {
+  color: #e3e3e3;
+  border: 0;
+  background-color: #e3e3e3; }
+
+.creative a.titlelink span {
+  font-size: 20px; }
+
+.creative .titlelinks {
+  width: 720px;
+  margin: 0 auto;
+  padding: 0px 0px 66px 0px; }
+
+.creative .titlelink {
+  width: 239px;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  color: #000; }
+
+.creative .titlelink a {
+  font-size: 18px;
+  color: #000; }
+
+.creative div.site-content h4.aligncenter a.underline {
+  color: #000; }
+
+.creative .thirdimgs1 p {
+  text-align: center; }
+
+.creative .halfimgs1 p {
+  text-align: center; }
+
+/* Layouts and grids */
+.app {
+  /*margin-top: 50px;*/
+  /*margin-bottom: 50px;*/ }
+
+.shop-app1 {
+  width: 149px; }
+
+.shop-app2 {
+  width: 441px;
+  margin-left: 65px;
+  margin-right: 65px; }
+
+.shop-app3 {
+  width: 177px; }
+
+.market-app1 {
+  width: 273px; }
+
+.market-app2 {
+  width: 273px;
+  margin-left: 65px; }
+
+.mag-app2 {
+  margin: 0 65px; }
+
+/*.halfimgs1 { width:486px; }
+.halfimgs2 { width:486px; }
+.halfimgs1, .halfimgs2 { padding-bottom:40px; }*/
+/* Images */
+.section {
+  margin-left: auto;
+  margin-right: auto; }
+
+.wrap {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  margin-bottom: 5px; }
+
+.wrap .app {
+  cursor: pointer;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1); }
+
+.wrap:hover .app {
+  opacity: 0.2;
+  position: relative; }
+
+.wrap .app:hover {
+  opacity: 1;
+  position: relative; }
+
+/*Buttons*/
+.apple-btn, .android-btn {
+  width: 112px;
+  height: 37px;
+  margin: 0 auto;
+  position: relative; }
+
+.apple-btn p, .android-btn p {
+  display: none; }
+
+.apple-btn, .android-btn img {
+  position: relative; }
+
+.apple-btn {
+  background: url("http://images.asos.com/htmlpages/140414-ASOS-Apps/appstore-btn.png") top left no-repeat;
+  /*-webkit-transition:background 0.4s ease-in-out;
+	-moz-transition:background 0.4s ease-in-out;
+	-ms-transition:background 0.4s ease-in-out;
+	-o-transition:background 0.4s ease-in-out;
+	transition:background 0.4s ease-in-out;*/ }
+
+.wrap .app:hover .apple-btn {
+  background-image: url("http://images.asos.com/htmlpages/140414-ASOS-Apps/appstore-btn-over.png");
+  position: relative; }
+
+.android-btn {
+  background: url("http://images.asos.com/htmlpages/140414-ASOS-Apps/android-btn.png") top left no-repeat;
+  /*-webkit-transition:background 0.4s ease-in-out;
+	-moz-transition:background 0.4s ease-in-out;
+	-ms-transition:background 0.4s ease-in-out;
+	-o-transition:background 0.4s ease-in-out;
+	transition:background 0.4s ease-in-out;*/ }
+
+.wrap .app:hover .android-btn {
+  background-image: url("http://images.asos.com/htmlpages/140414-ASOS-Apps/android-btn-over.png");
+  position: relative; }
+
+@media all and (max-width: 974px) {
+  .creative {
+    width: auto;
+    margin: 0 20px;
+  }
+  img.device {
+    width: 65%;
+  }
+  .shop-app1, .shop-app2, .shop-app3, .market-app1, .market-app2, .mag-app1, .mag-app1, .mag-app2 {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px; }
+}
+
+@media (max-width: 820px) {
+  .wrap .app.shop-app1 {
+    width: 15%;
+  }
+
+  .wrap .app.shop-app2 {
+    width: 50%;
+  }
+
+  .wrap .app.shop-app3 {
+    width: 18%;
+  }
+}
+
+@media (max-width: 620px) {
+  .wrap .app.shop-app1, .wrap .app.shop-app2, .wrap .app.shop-app3 {
+    width: auto;
+  }
+
+  img.device {
+    width: 85%;
+  }
+}

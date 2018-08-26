@@ -1,0 +1,68 @@
+@import "../../../../styles/typography.css";
+@import "../../../../styles/viewports.css";
+@import "../../../../styles/colors.css";
+@import "../../../../styles/button.css";
+
+.container {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+}
+
+.menuItem {
+  @apply --h4-text;
+  @apply --reset-button;
+
+  height: 78px;
+  width: 100%;
+  box-sizing: border-box;
+  background-size: 234px 100%;
+  background-position: 0 0;
+}
+
+.menuItem:hover {
+  opacity: 0.7;
+}
+
+.label {
+  text-align: left;
+  width: 140px;
+  color: #2d2d2d;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.label__light {
+  color: #fff;
+}
+
+.label__sale {
+  color: var(--red);
+}
+
+.label > span {
+  width: 100%;
+  white-space: pre-line;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.subtitle {
+  font-weight: 200;
+}
+
+@media (min-width: 375px) {
+  .menuItem {
+    @apply --h3-text;
+
+    height: 96px;
+    background-size: 288px 100%;
+  }
+
+  .label {
+    width: 180px;
+  }
+}

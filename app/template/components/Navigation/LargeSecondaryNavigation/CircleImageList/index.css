@@ -1,0 +1,104 @@
+@import "../../../../styles/colors.css";
+@import "../../../../styles/typography.css";
+@import "../../../../styles/accessibility.css";
+@import "../../../../styles/layout.css";
+
+:root {
+  --circle-image-link-height: 52px;
+  --circle-image-size: 40px;
+}
+
+.circleImageList {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  height: calc(6 * 52px);
+}
+
+.circleImageLink {
+  flex: 1;
+  max-height: 52px;
+  flex-basis: 52px;
+}
+
+.circleImageBorder {
+  padding: 3px;
+  border: solid 1px #ddd;
+}
+
+.circleImage {
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.circleImageBorder,
+.circleImage {
+  border-radius: 50%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.label {
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  letter-spacing: .4px;
+  line-height: 2.14;
+  color: #666;
+  text-decoration: none;
+
+  line-height: 52px;
+  height: 52px;
+  margin-left: 13px;
+  padding-left: 7px;
+  width: calc(150px - 13px - 7px);
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(61, 61, 61, .1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.label__sale {
+  color: var(--red);
+}
+
+.label__bold {
+  font-weight: 800;
+}
+
+/* container will wrap links in columns of 5 */
+.circleImageLink:nth-child(6) .label {
+  border: 0;
+}
+
+.circleImageLink:last-child .label {
+  border: 0;
+}
+
+.circleImageLink:hover span {
+    color: #0770cf;
+    outline: none;
+    box-shadow: inset 0 0 3px 1px #0770cf;
+  }
+
+.circleImageLink:hover .circleImageBorder {
+    border: solid 1px #2a52be;
+  }
+
+.label:focus {
+  color: #0770cf;
+  outline: none;
+  box-shadow: inset 0 0 3px 1px #0770cf;
+
+  outline: none;
+  box-shadow: inset 0 0 3px 1px #0770cf;
+}

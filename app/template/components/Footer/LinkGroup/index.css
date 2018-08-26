@@ -1,0 +1,141 @@
+@import "../../../styles/colors.css";
+@import "../../../styles/typography.css";
+@import "../../../styles/accessibility.css";
+@import "../../../styles/viewports.css";
+@import "../../../styles/icons.css";
+@import "../../../styles/layout.css";
+
+.container {
+  background-color: #f8f8f8;
+}
+
+.container[open] {
+  border-bottom: 1px solid #ddd;
+}
+
+.header {
+  font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+
+  position: relative;
+  display: block;
+  background-color: #eee;
+  line-height: 44px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 16px;
+  cursor: default;
+}
+
+.header:focus:not(.header__focused) {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.header__focused {
+  outline: none;
+  box-shadow: none;
+}
+
+.header:last-child {
+  border-bottom: none;
+}
+
+.header::-webkit-details-marker {
+  display: none;
+}
+
+.header::after,
+.container > .header::after {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 16px;
+  height: 10px;
+  width: 10px;
+  background-position: center;
+}
+
+.header::after {
+  content: " ";
+  background-image: svg-inline(plus);
+}
+
+.container[open] > .header::after {
+  content: " ";
+  background-image: svg-inline(minus);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  details.container > summary.header::before {
+    display: none;
+  }
+}
+
+.link {
+  font-size: 0.875rem;  font-family: futura-pt, sans-serif; letter-spacing: 0.4px;
+
+  display: block;
+  line-height: 44px;
+  padding-left: 16px;
+  text-decoration: none;
+  color: #666;
+}
+
+.link:focus {
+  outline: none;     box-shadow: inset 0 0 3px 1px #0770cf;
+}
+
+.link:hover {
+  color: #2a52be;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: inline-block;
+    width: calc((100% - 80px) / 3);
+    margin-right: 40px;
+    margin-bottom: 32px;
+    vertical-align: top;
+    background-color: #eee;
+  }
+
+  .container:first-child {
+    margin-left: 0;
+  }
+
+  .container[open] {
+    border-bottom: none;
+  }
+
+  .container:last-of-type {
+    margin-right: 0;
+  }
+
+  .header {
+    @apply --h4-text;
+
+    color: #666;
+    border-bottom: none;
+    padding-bottom: 10px;
+    padding-left: 0;
+    margin: 0;
+    display: block;
+    line-height: normal;
+  }
+
+  .header::after,
+  .container[open] > .header::after {
+    content: none;
+  }
+
+  .link {
+    line-height: 30px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex: 1;
+    margin-left: 16px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,109 @@
+@import "./colors.css";
+
+:root {
+  --primary-font: futura-pt, sans-serif;
+
+  --smallest-font-size: {
+    font-size: 0.75rem;
+  };
+
+  --small-font-size: {
+    font-size: 0.875rem;
+  };
+
+  --standard-font-size: {
+    font-size: 1rem;
+  };
+
+  --large-font-size: {
+    font-size: 1.125rem;
+  };
+
+  --body-text: {
+    @apply --small-font-size;
+
+    font-family: futura-pt, sans-serif;
+    letter-spacing: 0.4px;
+  };
+
+  --small-text: {
+    @apply --small-font-size;
+
+    font-family: futura-pt, sans-serif;
+    letter-spacing: 0.6px;
+  };
+
+  --h5-text: {
+    @apply --smallest-font-size;
+
+    font-family: futura-pt, sans-serif;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    font-weight: 900;
+  };
+
+  --h4-text: {
+    @apply --small-font-size;
+
+    font-family: futura-pt, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+  };
+
+  --h3-text: {
+    @apply --standard-font-size;
+
+    font-family: futura-pt, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+  };
+
+  --sr-only: {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  };
+
+  --link: {
+    @apply --body-text;
+
+    line-height: 2.14;
+    display: inline-block;
+    color: var(--gray);
+    text-decoration: none;
+  };
+
+  --link-hover: {
+    color: var(--cerulean);
+  };
+
+  --user-message-title: {
+    font-family: futura-pt, sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+  };
+
+  --user-message-detail: {
+    font-family: futura-pt, sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.4px;
+  };
+
+  --word-wrap-break: {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  };
+}
+

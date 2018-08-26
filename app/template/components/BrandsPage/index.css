@@ -1,0 +1,56 @@
+
+.list {
+  @apply --reset-list;
+}
+
+.groupList {
+  @apply --reset-list;
+
+  background-color: #eee;
+  padding-bottom: 8em;
+}
+
+.brandsPage {
+  font-family: var(--futura-font);
+  width: 100%;
+  max-width: 1322px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.brandListItem {
+  background-color: var(--white);
+}
+
+.pageTitle {
+  color: #2d2d2d;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  background: #eee;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+.groupTitle {
+  @apply --h3;
+
+  background: #eee;
+  padding: 1em;
+  margin: 0;
+}
+
+.brandTitle {
+  color: #2d2d2d;
+  padding: 1.5em 1em;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  display: block;
+}
+
+.brandListItem:hover {
+  background: #f8f8f8;
+}
